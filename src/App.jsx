@@ -17,9 +17,22 @@ export default function NaturalisationQuiz() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [score, setScore] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [timeLeft, setTimeLeft] = useState(45);
   const [viewMode, setViewMode] = useState('quiz'); // 'quiz', 'result', 'review'
 
   const QUIZ_LENGTH = 40;
+  const TIMER_DURATION = 45;
+
+  const categoryStyles = {
+    "Principes et valeurs de la République": "bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 border-blue-200 dark:border-blue-800",
+    "Système institutionnel et politique": "bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 border-purple-200 dark:border-purple-800",
+    "Droits et devoirs": "bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400 border-amber-200 dark:border-amber-800",
+    "Histoire, géographie et culture": "bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 border-emerald-200 dark:border-emerald-800",
+    "Vivre dans la société française": "bg-rose-100 dark:bg-rose-900/30 text-rose-600 dark:text-rose-400 border-rose-200 dark:border-rose-800",
+    "default": "bg-gray-100 dark:bg-gray-900/30 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-gray-800"
+  };
+
+  const getCategoryStyle = (category) => categoryStyles[category] || categoryStyles["default"];
 
   useEffect(() => {
     startNewQuiz();
@@ -39,6 +52,7 @@ export default function NaturalisationQuiz() {
     setIsSubmitted(false);
     setScore(0);
     setCurrentIndex(0);
+    setTimeLeft(TIMER_DURATION);
     setViewMode('quiz');
   };
 
@@ -75,6 +89,29 @@ export default function NaturalisationQuiz() {
     }
   };
 
+  useEffect(() => {
+    if (viewMode !== 'quiz' || isSubmitted) return;
+
+    if (timeLeft === 0) {
+      if (currentIndex === questions.length - 1) {
+        handleSubmit();
+      } else {
+        nextQuestion();
+      }
+      return;
+    }
+
+    const timer = setInterval(() => {
+      setTimeLeft(prev => prev - 1);
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [timeLeft, viewMode, isSubmitted, currentIndex, questions.length]);
+
+  useEffect(() => {
+    setTimeLeft(TIMER_DURATION);
+  }, [currentIndex]);
+
   const percentage = questions.length > 0 ? Math.round((score / questions.length) * 100) : 0;
   const isPassed = percentage >= 80;
 
@@ -87,24 +124,32 @@ export default function NaturalisationQuiz() {
 
     return (
       <div className="max-w-2xl mx-auto w-full">
-        {/* Progress Bar */}
-        <div className="mb-8">
-          <div className="flex justify-between items-end mb-2">
-            <span className="text-sm font-medium text-blue-600 dark:text-blue-400">Question {currentIndex + 1} sur {questions.length}</span>
-            <span className="text-sm font-medium text-blue-600 dark:text-blue-400">{Math.round(progress)}%</span>
+        {/* Timer and Progress */}
+        <div className="mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div className="flex-1">
+            <div className="flex justify-between items-end mb-2">
+              <span className="text-sm font-medium text-blue-600 dark:text-blue-400">Question {currentIndex + 1} sur {questions.length}</span>
+              <span className="text-sm font-medium text-blue-600 dark:text-blue-400">{Math.round(progress)}%</span>
+            </div>
+            <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+              <div 
+                className="bg-blue-600 h-2.5 rounded-full transition-all duration-300" 
+                style={{ width: `${progress}%` }}
+              ></div>
+            </div>
           </div>
-          <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
-            <div 
-              className="bg-blue-600 h-2.5 rounded-full transition-all duration-300" 
-              style={{ width: `${progress}%` }}
-            ></div>
+          <div className={`flex items-center justify-center px-4 py-2 rounded-xl border-2 ${timeLeft <= 10 ? 'border-red-500 bg-red-50 dark:bg-red-900/20 text-red-600' : 'border-blue-200 dark:border-blue-800 bg-blue-50 dark:bg-blue-900/20 text-blue-600'} transition-colors duration-300`}>
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span className="text-xl font-bold tabular-nums">{timeLeft}s</span>
           </div>
         </div>
 
         {/* Question Card */}
         <div className="bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-700 transition-all">
           <div className="mb-4">
-            <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 uppercase tracking-wider border border-blue-200 dark:border-blue-800">
+            <span className={`inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider border ${getCategoryStyle(q.categorie)}`}>
               {q.categorie}
             </span>
           </div>
@@ -243,7 +288,7 @@ export default function NaturalisationQuiz() {
                   </span>
                   <div className="flex-1">
                     <div className="mb-2">
-                      <span className="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider">
+                      <span className={`inline-block px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider border ${getCategoryStyle(q.categorie)}`}>
                         {q.categorie}
                       </span>
                     </div>

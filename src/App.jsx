@@ -103,6 +103,11 @@ export default function NaturalisationQuiz() {
 
         {/* Question Card */}
         <div className="bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-700 transition-all">
+          <div className="mb-4">
+            <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 uppercase tracking-wider border border-blue-200 dark:border-blue-800">
+              {q.categorie}
+            </span>
+          </div>
           <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-6">
             {q.question}
           </h2>
@@ -237,6 +242,11 @@ export default function NaturalisationQuiz() {
                     {index + 1}
                   </span>
                   <div className="flex-1">
+                    <div className="mb-2">
+                      <span className="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider">
+                        {q.categorie}
+                      </span>
+                    </div>
                     <p className="font-bold text-gray-900 dark:text-white mb-4 text-lg">{q.question}</p>
                     <div className="space-y-2">
                       {q.options.map((option, optIndex) => {

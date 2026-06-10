@@ -1,569 +1,5 @@
-import  { useState, useEffect } from 'react';
-
-// Base de données des questions extraites du PDF avec choix et réponses ajoutés
-const questionBank = [
-  {
-    id: 1,
-    question: "Complétez les paroles de la Marseillaise \"Allons enfants de la patrie...\"",
-    options: ["Le jour de gloire est arrivé", "L'étendard sanglant est levé", "Marchons, marchons", "Formez vos bataillons"],
-    answer: "Le jour de gloire est arrivé"
-  },
-  {
-    id: 2,
-    question: "En quelle année la loi de séparation des Églises et de l'État a-t-elle été votée ?",
-    options: ["1789", "1905", "1945", "1958"],
-    answer: "1905"
-  },
-  {
-    id: 3,
-    question: "Quelle est la devise de la République française ?",
-    options: ["Travail, Famille, Patrie", "Liberté, Égalité, Fraternité", "Paix, Justice, Solidarité", "Unité, Indivisibilité, Laïcité"],
-    answer: "Liberté, Égalité, Fraternité"
-  },
-  {
-    id: 4,
-    question: "Qui dirige l'action du gouvernement ?",
-    options: ["Le Président de la République", "Le Premier ministre", "Le Ministre de l'Intérieur", "Le Président de l'Assemblée nationale"],
-    answer: "Le Premier ministre"
-  },
-  {
-    id: 5,
-    question: "Quelle est la durée du mandat du Président de la République française ?",
-    options: ["4 ans", "5 ans", "7 ans", "10 ans"],
-    answer: "5 ans"
-  },
-  {
-    id: 6,
-    question: "Quel est le texte fondateur établissant les droits et les devoirs de chaque citoyen ?",
-    options: ["La Déclaration des Droits de l'Homme et du Citoyen", "Le Code Civil", "Le Traité de Rome", "La Charte de la Laïcité"],
-    answer: "La Déclaration des Droits de l'Homme et du Citoyen"
-  },
-  {
-    id: 7,
-    question: "Qui a rendu l'école gratuite, laïque et obligatoire ?",
-    options: ["Napoléon Bonaparte", "Jules Ferry", "Victor Hugo", "Charles de Gaulle"],
-    answer: "Jules Ferry"
-  },
-  {
-    id: 8,
-    question: "De quand date l'appel à la résistance du général de Gaulle ?",
-    options: ["14 juillet 1789", "11 novembre 1918", "18 juin 1940", "8 mai 1945"],
-    answer: "18 juin 1940"
-  },
-  {
-    id: 9,
-    question: "Combien y a-t-il de départements en France ?",
-    options: ["95", "101", "105", "110"],
-    answer: "101"
-  },
-  {
-    id: 10,
-    question: "Quel numéro d'urgence permet d'appeler le SAMU ?",
-    options: ["15", "17", "18", "112"],
-    answer: "15"
-  },
-  {
-    id: 11,
-    question: "À quel âge est la majorité civile en France ?",
-    options: ["16 ans", "18 ans", "21 ans", "15 ans"],
-    answer: "18 ans"
-  },
-  {
-    id: 12,
-    question: "Que célèbre-t-on le 8 mai ?",
-    options: ["La prise de la Bastille", "L'armistice de la Première Guerre mondiale", "La fin de la Seconde Guerre mondiale en Europe", "La fête du Travail"],
-    answer: "La fin de la Seconde Guerre mondiale en Europe"
-  },
-  {
-    id: 13,
-    question: "Lequel de ces symboles représente la République française ?",
-    options: ["Le coq", "La fleur de lys", "Marianne", "Le bonnet phrygien"],
-    answer: "Marianne"
-  },
-  {
-    id: 14,
-    question: "Où est le siège du Parlement européen ?",
-    options: ["Paris", "Bruxelles", "Strasbourg", "Berlin"],
-    answer: "Strasbourg"
-  },
-  {
-    id: 15,
-    question: "Qui a peint \"La liberté guidant le peuple\" ?",
-    options: ["Claude Monet", "Eugène Delacroix", "Auguste Renoir", "Paul Cézanne"],
-    answer: "Eugène Delacroix"
-  },
-  {
-    id: 16,
-    question: "Complétez les paroles de la Marseillaise \"Allons enfants de la patrie...\"",
-    options: ["Le jour de gloire est arrivé", "L'étendard sanglant est levé", "Marchons, marchons", "Formez vos bataillons"],
-    answer: "Le jour de gloire est arrivé"
-  },
-  {
-    id: 17,
-    question: "Dans le cadre d'un entretien d'embauche, que peut-on demander au candidat ?",
-    options: ["Ses diplômes et ses expériences professionnelles", "Son orientation religieuse", "Son opinion politique", "Ses origines ethniques"],
-    answer: "Ses diplômes et ses expériences professionnelles"
-  },
-  {
-    id: 18,
-    question: "Déclarer ses revenus aux services fiscaux est :",
-    options: ["Une obligation légale", "Facultatif", "Réservé aux citoyens français", "Uniquement pour les entreprises"],
-    answer: "Une obligation légale"
-  },
-  {
-    id: 19,
-    question: "En France, les impôts permettent de financer les dépenses publiques. Quelle proposition est correcte ?",
-    options: ["Ils financent les écoles, les hôpitaux et les infrastructures", "Ils sont reversés uniquement à l'Union Européenne", "Ils financent les campagnes politiques", "Ils servent uniquement à payer l'armée"],
-    answer: "Ils financent les écoles, les hôpitaux et les infrastructures"
-  },
-  {
-    id: 20,
-    question: "La liberté d'association est :",
-    options: ["Garantie par la loi", "Interdite en France", "Soumise à un impôt spécifique", "Réservée aux personnes nées en France"],
-    answer: "Garantie par la loi"
-  },
-  {
-    id: 21,
-    question: "La liberté d'expression sur les réseaux sociaux en France est :",
-    options: ["Limitée par la loi (interdiction de la diffamation, racisme, etc.)", "Totalement sans aucune limite", "Interdite aux mineurs", "Soumise à validation de la mairie"],
-    answer: "Limitée par la loi (interdiction de la diffamation, racisme, etc.)"
-  },
-  {
-    id: 22,
-    question: "Lequel de ces prénoms évoque un symbole de la République ?",
-    options: ["Marianne", "Jeanne", "Joséphine", "Marie"],
-    answer: "Marianne"
-  },
-  {
-    id: 23,
-    question: "Où peut-on voir la devise de la République ?",
-    options: ["Sur le fronton des mairies et des écoles", "Uniquement à l'Assemblée nationale", "Sur les billets de banque", "Dans les églises"],
-    answer: "Sur le fronton des mairies et des écoles"
-  },
-  {
-    id: 24,
-    question: "Peut-on brûler publiquement un drapeau français ?",
-    options: ["Non, c'est un délit puni par la loi", "Oui, au nom de la liberté d'expression", "Oui, mais seulement le 14 juillet", "Non, sauf si on a une autorisation de la mairie"],
-    answer: "Non, c'est un délit puni par la loi"
-  },
-  {
-    id: 25,
-    question: "Quand la sécurité sociale a-t-elle été établie en France ?",
-    options: ["En 1945", "En 1789", "En 1905", "En 1958"],
-    answer: "En 1945"
-  },
-  {
-    id: 26,
-    question: "Que commémore la fête nationale ?",
-    options: ["La prise de la Bastille et la fête de la Fédération", "La fin de la Première Guerre mondiale", "La naissance de Napoléon", "La libération de Paris"],
-    answer: "La prise de la Bastille et la fête de la Fédération"
-  },
-  {
-    id: 27,
-    question: "Que porte Marianne sur la tête ?",
-    options: ["Un bonnet phrygien", "Une couronne d'or", "Un foulard bleu", "Un chapeau melon"],
-    answer: "Un bonnet phrygien"
-  },
-  {
-    id: 28,
-    question: "Que signifie le mot \"fraternité\" dans la devise française ?",
-    options: ["La solidarité entre les citoyens", "L'obligation d'avoir des frères et sœurs", "Le droit de faire partie d'un syndicat", "L'égalité des salaires"],
-    answer: "La solidarité entre les citoyens"
-  },
-  {
-    id: 29,
-    question: "Quel symbole de la République peut-on voir sur les maillots de l'équipe de France de football ?",
-    options: ["Le coq", "La fleur de lys", "L'aigle", "Marianne"],
-    answer: "Le coq"
-  },
-  {
-    id: 30,
-    question: "Quelle est la devise de la République française ?",
-    options: ["Liberté, Égalité, Fraternité", "Travail, Famille, Patrie", "Paix, Justice, Solidarité", "Unité, Indivisibilité, Laïcité"],
-    answer: "Liberté, Égalité, Fraternité"
-  },
-  {
-    id: 31,
-    question: "Selon la Constitution, la France est une République...",
-    options: ["Indivisible, laïque, démocratique et sociale", "Royale et catholique", "Fédérale et capitaliste", "Autoritaire et unie"],
-    answer: "Indivisible, laïque, démocratique et sociale"
-  },
-  {
-    id: 32,
-    question: "Selon le principe de laïcité, que signifie la neutralité de l'État ?",
-    options: ["L'État ne favorise ni ne finance aucune religion", "L'État interdit toutes les religions", "L'État choisit une religion officielle", "L'État finance la construction de toutes les églises"],
-    answer: "L'État ne favorise ni ne finance aucune religion"
-  },
-  {
-    id: 33,
-    question: "En quelle année la loi de séparation des Églises et de l'État a-t-elle été votée ?",
-    options: ["1905", "1789", "1945", "1958"],
-    answer: "1905"
-  },
-  {
-    id: 34,
-    question: "Quel symbole religieux peut être porté dans une école publique dans le respect de la laïcité ?",
-    options: ["Aucun signe religieux ostentatoire n'est autorisé", "Un foulard", "Une grande croix", "Une kippa"],
-    answer: "Aucun signe religieux ostentatoire n'est autorisé"
-  },
-  {
-    id: 35,
-    question: "Quel jour célèbre-t-on officiellement la laïcité en France ?",
-    options: ["Le 9 décembre", "Le 14 juillet", "Le 11 novembre", "Le 1er mai"],
-    answer: "Le 9 décembre"
-  },
-  {
-    id: 36,
-    question: "Une personne déclare ne croire en aucun dieu. On peut dire :",
-    options: ["Qu'elle est athée", "Qu'elle est agnostique", "Qu'elle est laïque", "Qu'elle est croyante"],
-    answer: "Qu'elle est athée"
-  },
-
-  // --- PAGE 3 & 4 : Système institutionnel et politique ---
-  {
-    id: 37,
-    question: "Comment est désigné le Premier ministre ?",
-    options: ["Il est nommé par le Président de la République", "Il est élu par les citoyens", "Il est tiré au sort", "Il est nommé par le maire de Paris"],
-    answer: "Il est nommé par le Président de la République"
-  },
-  {
-    id: 38,
-    question: "À qui appartient la souveraineté nationale ?",
-    options: ["Au peuple", "Au Président de la République", "Au gouvernement", "Aux juges"],
-    answer: "Au peuple"
-  },
-  {
-    id: 39,
-    question: "Qui est élu lors des élections municipales ?",
-    options: ["Le conseil municipal, qui élit ensuite le maire", "Le député de la circonscription", "Le préfet", "Le Président de la République"],
-    answer: "Le conseil municipal, qui élit ensuite le maire"
-  },
-  {
-    id: 40,
-    question: "L'inscription sur les listes électorales est :",
-    options: ["Nécessaire pour pouvoir voter", "Automatique pour tout résident étranger", "Payante", "Réservée aux personnes de plus de 21 ans"],
-    answer: "Nécessaire pour pouvoir voter"
-  },
-  {
-    id: 41,
-    question: "À quel âge peut-on devenir électeur ?",
-    options: ["18 ans", "16 ans", "21 ans", "25 ans"],
-    answer: "18 ans"
-  },
-  {
-    id: 42,
-    question: "En France, est-ce obligatoire de voter ?",
-    options: ["Non, c'est un droit mais pas une obligation", "Oui, sinon on paie une amende", "Oui, sauf pour les élections municipales", "Non, sauf si on travaille pour l'État"],
-    answer: "Non, c'est un droit mais pas une obligation"
-  },
-  {
-    id: 43,
-    question: "A-t-on le droit de ne pas respecter une loi ?",
-    options: ["Non, nul n'est censé ignorer la loi", "Oui, si on n'est pas d'accord with", "Oui, si on est de nationalité étrangère", "Oui, si le maire donne son accord"],
-    answer: "Non, nul n'est censé ignorer la loi"
-  },
-  {
-    id: 44,
-    question: "La séparation des pouvoirs est un principe fondamental. Quels sont les trois pouvoirs concernés ?",
-    options: ["Exécutif, législatif, judiciaire", "Exécutif, politique, économique", "Législatif, médiatique, militaire", "Judiciaire, religieux, politique"],
-    answer: "Exécutif, législatif, judiciaire"
-  },
-  {
-    id: 45,
-    question: "Quelles sont les durées du mandat du conseil municipal et du maire ?",
-    options: ["6 ans", "5 ans", "7 ans", "4 ans"],
-    answer: "6 ans"
-  },
-  {
-    id: 46,
-    question: "Qui est élu lors des élections législatives ?",
-    options: ["Les députés", "Les sénateurs", "Les maires", "Le Président de la République"],
-    answer: "Les députés"
-  },
-  {
-    id: 47,
-    question: "Quelle est la durée du mandat du Président de la République française ?",
-    options: ["5 ans", "4 ans", "7 ans", "6 ans"],
-    answer: "5 ans"
-  },
-  {
-    id: 48,
-    question: "Qui dirige l'action du gouvernement ?",
-    options: ["Le Premier ministre", "Le Président de l'Assemblée nationale", "Le ministre de l'Intérieur", "Le Président de la République"],
-    answer: "Le Premier ministre"
-  },
-  {
-    id: 49,
-    question: "Combien y a-t-il de départements en France ?",
-    options: ["101", "95", "100", "98"],
-    answer: "101"
-  },
-  {
-    id: 50,
-    question: "Qui représente l'État dans un département ?",
-    options: ["Le préfet", "Le maire du chef-lieu", "Le député", "Le président du Conseil départemental"],
-    answer: "Le préfet"
-  },
-  {
-    id: 51,
-    question: "De quoi est composé le drapeau européen ?",
-    options: ["12 étoiles dorées sur fond bleu", "15 étoiles blanches sur fond rouge", "Une croix blanche sur fond bleu", "27 étoiles dorées on fond bleu"],
-    answer: "12 étoiles dorées sur fond bleu"
-  },
-  {
-    id: 52,
-    question: "Quel est l'hymne de l'Union Européenne ?",
-    options: ["L'Ode à la joie", "La Marseillaise", "God Save the King", "Le Chant des Partisans"],
-    answer: "L'Ode à la joie"
-  },
-  {
-    id: 53,
-    question: "Où est le siège du Parlement européen ?",
-    options: ["Strasbourg", "Paris", "Bruxelles", "Berlin"],
-    answer: "Strasbourg"
-  },
-  {
-    id: 54,
-    question: "Quel État a quitté l'Union Européenne en 2020 ?",
-    options: ["Le Royaume-Uni", "La Suisse", "La Grèce", "L'Italie"],
-    answer: "Le Royaume-Uni"
-  },
-
-  // --- PAGE 5 & 6 : Droits et devoirs ---
-  {
-    id: 55,
-    question: "Quel droit protège une personne contre une arrestation arbitraire ?",
-    options: ["La liberté individuelle", "La liberté d'association", "Le droit de propriété", "Le droit de grève"],
-    answer: "La liberté individuelle"
-  },
-  {
-    id: 56,
-    question: "Quel est le texte fondateur établissant les droits et les devoirs de chaque citoyen ?",
-    options: ["La Déclaration des Droits de l'Homme et du Citoyen", "Le Code de la route", "Le traité de Versailles", "La constitution européenne"],
-    answer: "La Déclaration des Droits de l'Homme et du Citoyen"
-  },
-  {
-    id: 57,
-    question: "L'article 4 de la Déclaration des droits de l'homme affirme que \"la liberté consiste à pouvoir faire tout ce qui ne nuit pas à autrui\". Qu'est-ce que cela signifie ?",
-    options: ["Ma liberté s'arrête là où commence celle des autres", "Je peux tout faire sans exception", "Seul l'État a des libertés", "La liberté n'existe pas en société"],
-    answer: "Ma liberté s'arrête là où commence celle des autres"
-  },
-  {
-    id: 58,
-    question: "Dans lequel de ces endroits est-on autorisé à fumer ?",
-    options: ["Dans la rue", "Dans un hôpital", "Dans un restaurant fermé", "Dans une école primaire"],
-    answer: "Dans la rue"
-  },
-  {
-    id: 59,
-    question: "Est-ce légal d'être marié à plusieurs personnes en même temps en France ?",
-    options: ["Non, la polygamie est interdite", "Oui, si tout le monde est d'accord", "Oui, pour les hommes uniquement", "Non, sauf dérogation du maire"],
-    answer: "Non, la polygamie est interdite"
-  },
-  {
-    id: 60,
-    question: "Est-ce obligatoire de déclarer ses impôts chaque année en France ?",
-    options: ["Oui, même si on ne paie pas d'impôts", "Non, seulement si on gagne beaucoup d'argent", "Non, c'est l'employeur qui s'en charge obligatoirement", "Oui, mais uniquement pour les propriétaires"],
-    answer: "Oui, même si on ne paie pas d'impôts"
-  },
-  {
-    id: 61,
-    question: "Est-il obligatoire de porter secours à une personne en danger ?",
-    options: ["Oui, la non-assistance à personne en danger est un délit", "Non, c'est le travail des pompiers", "Oui, mais seulement si on est médecin", "Non, on peut choisir d'intervenir ou pas"],
-    answer: "Oui, la non-assistance à personne en danger est un délit"
-  },
-  {
-    id: 62,
-    question: "La vente d'alcool en France est interdite aux personnes de moins de :",
-    options: ["18 ans", "16 ans", "21 ans", "14 ans"],
-    answer: "18 ans"
-  },
-
-  // --- PAGE 7, 8 & 9 : Histoire, géographie et culture ---
-  {
-    id: 63,
-    question: "Que signifie la date du 14 juillet pour les Français ?",
-    options: ["La Fête nationale", "La fin de la Seconde Guerre mondiale", "L'abolition de l'esclavage", "L'appel du Général de Gaulle"],
-    answer: "La Fête nationale"
-  },
-  {
-    id: 64,
-    question: "Pourquoi l'année 1958 est importante pour la France ?",
-    options: ["C'est l'adoption de la Constitution de la Ve République", "C'est la fin de la Première Guerre mondiale", "C'est l'année de l'abolition de la peine de mort", "C'est l'adoption de la loi de laïcité"],
-    answer: "C'est l'adoption de la Constitution de la Ve République"
-  },
-  {
-    id: 65,
-    question: "Simone Veil est une figure importante de l'histoire française. Elle a notamment :",
-    options: ["Fait adopter la loi autorisant l'IVG (avortement)", "Été la première femme Présidente de la République", "Peint la Joconde", "Découvert le radium"],
-    answer: "Fait adopter la loi autorisant l'IVG (avortement)"
-  },
-  {
-    id: 66,
-    question: "Dans quelle région est située une partie des plages du débarquement (1944) ?",
-    options: ["En Normandie", "En Bretagne", "En Provence", "En Nouvelle-Aquitaine"],
-    answer: "En Normandie"
-  },
-  {
-    id: 67,
-    question: "En quelle année a débuté la Révolution française ?",
-    options: ["1789", "1905", "1804", "1958"],
-    answer: "1789"
-  },
-  {
-    id: 68,
-    question: "Qui a rendu l'école gratuite, laïque et obligatoire ?",
-    options: ["Jules Ferry", "Napoléon Bonaparte", "Charles de Gaulle", "Victor Hugo"],
-    answer: "Jules Ferry"
-  },
-  {
-    id: 69,
-    question: "De quand date l'appel à la résistance du général de Gaulle ?",
-    options: ["18 juin 1940", "11 novembre 1918", "8 mai 1945", "14 juillet 1789"],
-    answer: "18 juin 1940"
-  },
-  {
-    id: 70,
-    question: "Sous quel président a été abolie la peine de mort en France ?",
-    options: ["François Mitterrand", "Charles de Gaulle", "Jacques Chirac", "Emmanuel Macron"],
-    answer: "François Mitterrand"
-  },
-  {
-    id: 71,
-    question: "Depuis quand l'esclavage a-t-il été définitivement aboli en France ?",
-    options: ["1848", "1789", "1905", "1945"],
-    answer: "1848"
-  },
-  {
-    id: 72,
-    question: "En 1944, qu'est-ce qui a changé pour les femmes ?",
-    options: ["Elles ont obtenu le droit de vote", "Elles ont obtenu le droit de travailler sans l'accord de leur mari", "Elles ont obtenu l'égalité salariale", "Elles ont pu ouvrir un compte bancaire seules"],
-    answer: "Elles ont obtenu le droit de vote"
-  },
-  {
-    id: 73,
-    question: "En quelle année l'euro est-il devenu la monnaie officielle de la France ?",
-    options: ["2002", "1999", "1992", "2010"],
-    answer: "2002"
-  },
-  {
-    id: 74,
-    question: "Quelle œuvre a été écrite par Victor Hugo ?",
-    options: ["Les Misérables", "Le Petit Prince", "L'Étranger", "Madame Bovary"],
-    answer: "Les Misérables"
-  },
-  {
-    id: 75,
-    question: "Qui a peint \"La liberté guidant le peuple\" ?",
-    options: ["Eugène Delacroix", "Claude Monet", "Auguste Renoir", "Paul Cézanne"],
-    answer: "Eugène Delacroix"
-  },
-  {
-    id: 76,
-    question: "Quel château célèbre se trouve près de Paris et symbolise le pouvoir royal de Louis XIV ?",
-    options: ["Le château de Versailles", "Le château de Chambord", "Le château de Fontainebleau", "Le palais du Louvre"],
-    answer: "Le château de Versailles"
-  },
-  {
-    id: 77,
-    question: "Qui était Molière ?",
-    options: ["Un dramaturge (auteur de théâtre)", "Un scientifique", "Un Président de la République", "Un peintre impressionniste"],
-    answer: "Un dramaturge (auteur de théâtre)"
-  },
-  {
-    id: 78,
-    question: "Quelle est la plus haute montagne de France ?",
-    options: ["Le Mont Blanc", "Le Mont Ventoux", "Le Pic du Midi", "Le Puy de Dôme"],
-    answer: "Le Mont Blanc"
-  },
-  {
-    id: 79,
-    question: "Quelle île française est située dans l'océan Indien ?",
-    options: ["La Réunion", "La Corse", "La Martinique", "Tahiti"],
-    answer: "La Réunion"
-  },
-  {
-    id: 80,
-    question: "Quel département français a une frontière avec le Brésil ?",
-    options: ["La Guyane", "La Guadeloupe", "La Martinique", "Mayotte"],
-    answer: "La Guyane"
-  },
-
-  // --- PAGE 10 & 11 : Vivre dans la société française ---
-  {
-    id: 81,
-    question: "Où faut-il déclarer la naissance d'un enfant ?",
-    options: ["À la mairie", "À la préfecture", "À l'hôpital", "Au commissariat de police"],
-    answer: "À la mairie"
-  },
-  {
-    id: 82,
-    question: "Quel numéro d'urgence permet d'appeler la police ?",
-    options: ["17", "15", "18", "112"],
-    answer: "17"
-  },
-  {
-    id: 83,
-    question: "Quel numéro d'urgence permet d'appeler le SAMU ?",
-    options: ["15", "17", "18", "114"],
-    answer: "15"
-  },
-  {
-    id: 84,
-    question: "À quoi sert la carte Vitale ?",
-    options: ["À la prise en charge des frais de santé par l'Assurance maladie", "À payer ses impôts", "À retirer de l'argent", "À s'identifier pour voter"],
-    answer: "À la prise en charge des frais de santé par l'Assurance maladie"
-  },
-  {
-    id: 85,
-    question: "L'avortement est-il possible en France ?",
-    options: ["Oui, c'est un droit garanti (IVG)", "Non, c'est strictement interdit", "Oui, mais uniquement pour raisons médicales graves", "Non, sauf accord d'un juge"],
-    answer: "Oui, c'est un droit garanti (IVG)"
-  },
-  {
-    id: 86,
-    question: "Travailler sans être déclaré est :",
-    options: ["Illégal (travail dissimulé ou \"au noir\")", "Autorisé pour les étudiants", "Légal si l'employeur est d'accord", "Autorisé si on gagne moins que le SMIC"],
-    answer: "Illégal (travail dissimulé ou \"au noir\")"
-  },
-  {
-    id: 87,
-    question: "Qu'est-ce que le SMIC ?",
-    options: ["Le Salaire Minimum Interprofessionnel de Croissance", "Le Syndicat Médical Indépendant des Cliniques", "Le Système Municipal d'Information aux Citoyens", "Une taxe sur les entreprises"],
-    answer: "Le Salaire Minimum Interprofessionnel de Croissance"
-  },
-  {
-    id: 88,
-    question: "Quelle est la durée légale du temps de travail par semaine ?",
-    options: ["35 heures", "39 heures", "40 heures", "42 heures"],
-    answer: "35 heures"
-  },
-  {
-    id: 89,
-    question: "Est-il possible de licencier une femme enceinte ou en congé maternité, en raison de sa grossesse ?",
-    options: ["Non, la loi protège les femmes enceintes contre le licenciement", "Oui, si l'entreprise a des difficultés", "Oui, en lui payant une forte indemnité", "Non, sauf si elle accepte de démissionner"],
-    answer: "Non, la loi protège les femmes enceintes contre le licenciement"
-  },
-  {
-    id: 90,
-    question: "Jusqu'à quel âge l'instruction (l'école) est-elle obligatoire ?",
-    options: ["16 ans", "18 ans", "14 ans", "21 ans"],
-    answer: "16 ans"
-  },
-  {
-    id: 91,
-    question: "À quel âge commence l'instruction obligatoire des enfants ?",
-    options: ["3 ans", "6 ans", "4 ans", "2 ans"],
-    answer: "3 ans"
-  },
-  {
-    id: 92,
-    question: "Est-ce possible de punir physiquement ses enfants ?",
-    options: ["Non, les violences éducatives ordinaires sont interdites", "Oui, mais sans laisser de traces", "Oui, c'est autorisé par la loi", "Seulement si l'enfant a plus de 7 ans"],
-    answer: "Non, les violences éducatives ordinaires sont interdites"
-  }
-  // Vous pouvez ajouter ici les autres questions du PDF en suivant ce même format.
-];
+import { useState, useEffect } from 'react';
+import questionBank from './questions.json';
 
 // Fonction pour mélanger un tableau (Fisher-Yates)
 const shuffleArray = (array) => {
@@ -580,19 +16,19 @@ export default function NaturalisationQuiz() {
   const [userAnswers, setUserAnswers] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [score, setScore] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [viewMode, setViewMode] = useState('quiz'); // 'quiz', 'result', 'review'
 
-  const QUIZ_LENGTH = 40; // Objectif de 40 questions
+  const QUIZ_LENGTH = 40;
 
   useEffect(() => {
     startNewQuiz();
   }, []);
 
   const startNewQuiz = () => {
-    // Sélectionner aléatoirement jusqu'à 40 questions
     const shuffledBank = shuffleArray(questionBank);
     const selectedQuestions = shuffledBank.slice(0, Math.min(QUIZ_LENGTH, shuffledBank.length));
 
-    // Mélanger les options pour chaque question
     const questionsWithOptionsShuffled = selectedQuestions.map(q => ({
       ...q,
       options: shuffleArray(q.options)
@@ -602,6 +38,8 @@ export default function NaturalisationQuiz() {
     setUserAnswers({});
     setIsSubmitted(false);
     setScore(0);
+    setCurrentIndex(0);
+    setViewMode('quiz');
   };
 
   const handleOptionChange = (questionIndex, selectedOption) => {
@@ -622,99 +60,249 @@ export default function NaturalisationQuiz() {
     });
     setScore(currentScore);
     setIsSubmitted(true);
+    setViewMode('result');
+  };
+
+  const nextQuestion = () => {
+    if (currentIndex < questions.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+    }
+  };
+
+  const prevQuestion = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+    }
   };
 
   const percentage = questions.length > 0 ? Math.round((score / questions.length) * 100) : 0;
   const isPassed = percentage >= 80;
 
-  return (
-      <div className="min-h-screen bg-gray-50 py-8 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-lg">
-          <h1 className="text-3xl font-bold text-center text-blue-800 mb-2">Examen Civique - Naturalisation</h1>
-          <p className="text-center text-gray-600 mb-8">Testez vos connaissances ({questions.length} questions générées)</p>
+  if (questions.length === 0) return <div className="flex items-center justify-center min-h-screen">Chargement...</div>;
 
-          {isSubmitted && (
-              <div className={`p-6 mb-8 rounded-lg text-center ${isPassed ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
-                <h2 className="text-2xl font-bold mb-2">
-                  {isPassed ? 'Félicitations ! Vous avez réussi.' : 'Dommage, vous n\'avez pas atteint les 80%.'}
-                </h2>
-                <p className="text-lg">Votre score : {score} / {questions.length} ({percentage}%)</p>
-                <p className="text-sm mt-2">Condition de réussite : 80% de bonnes réponses.</p>
-                <button
-                    onClick={startNewQuiz}
-                    className="mt-4 px-6 py-2 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700 transition"
-                >
-                  Recommencer un test
-                </button>
-              </div>
-          )}
+  const renderQuiz = () => {
+    const q = questions[currentIndex];
+    const isAnswered = userAnswers[currentIndex] !== undefined;
+    const progress = ((currentIndex + 1) / questions.length) * 100;
 
-          <div className="space-y-8">
-            {questions.map((q, index) => (
-                <div key={index} className={`p-6 rounded-lg border ${isSubmitted ? (userAnswers[index] === q.answer ? 'border-green-400 bg-green-50' : 'border-red-400 bg-red-50') : 'border-gray-200'}`}>
-                  <p className="font-semibold text-lg text-gray-800 mb-4">
-                    {index + 1}. {q.question}
-                  </p>
-                  <div className="space-y-3">
-                    {q.options.map((option, optIndex) => {
-                      const isSelected = userAnswers[index] === option;
-                      const isCorrect = option === q.answer;
-
-                      let labelClass = "flex items-center p-3 border rounded cursor-pointer transition ";
-                      if (!isSubmitted) {
-                        labelClass += isSelected ? "bg-blue-50 border-blue-500" : "hover:bg-gray-50 border-gray-300";
-                      } else {
-                        if (isCorrect) {
-                          labelClass += "bg-green-100 border-green-500 font-medium";
-                        } else if (isSelected && !isCorrect) {
-                          labelClass += "bg-red-100 border-red-500 line-through text-gray-500";
-                        } else {
-                          labelClass += "border-gray-200 opacity-50";
-                        }
-                      }
-
-                      return (
-                          <label key={optIndex} className={labelClass}>
-                            <input
-                                type="radio"
-                                name={`question-${index}`}
-                                value={option}
-                                checked={isSelected}
-                                onChange={() => handleOptionChange(index, option)}
-                                disabled={isSubmitted}
-                                className="mr-3 h-4 w-4 text-blue-600 focus:ring-blue-500"
-                            />
-                            <span>{option}</span>
-                          </label>
-                      );
-                    })}
-                  </div>
-
-                  {/* Affichage de la correction détaillée après soumission */}
-                  {isSubmitted && userAnswers[index] !== q.answer && (
-                      <div className="mt-4 p-3 bg-white border border-red-200 rounded text-sm text-red-800">
-                        <span className="font-bold">Correction :</span> La bonne réponse est <span className="font-semibold text-green-700">"{q.answer}"</span>.
-                      </div>
-                  )}
-                </div>
-            ))}
+    return (
+      <div className="max-w-2xl mx-auto w-full">
+        {/* Progress Bar */}
+        <div className="mb-8">
+          <div className="flex justify-between items-end mb-2">
+            <span className="text-sm font-medium text-blue-600 dark:text-blue-400">Question {currentIndex + 1} sur {questions.length}</span>
+            <span className="text-sm font-medium text-blue-600 dark:text-blue-400">{Math.round(progress)}%</span>
           </div>
+          <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+            <div 
+              className="bg-blue-600 h-2.5 rounded-full transition-all duration-300" 
+              style={{ width: `${progress}%` }}
+            ></div>
+          </div>
+        </div>
 
-          {!isSubmitted && questions.length > 0 && (
-              <div className="mt-10 text-center">
-                <button
-                    onClick={handleSubmit}
-                    disabled={Object.keys(userAnswers).length !== questions.length}
-                    className="px-8 py-3 bg-blue-600 text-white text-lg font-bold rounded-lg shadow hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition"
+        {/* Question Card */}
+        <div className="bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-700 transition-all">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-6">
+            {q.question}
+          </h2>
+          
+          <div className="space-y-3">
+            {q.options.map((option, optIndex) => {
+              const isSelected = userAnswers[currentIndex] === option;
+              return (
+                <label 
+                  key={optIndex} 
+                  className={`
+                    flex items-center p-4 border-2 rounded-xl cursor-pointer transition-all duration-200
+                    ${isSelected 
+                      ? 'border-blue-500 bg-blue-50 dark:bg-blue-900/20' 
+                      : 'border-gray-100 dark:border-gray-700 hover:border-blue-200 dark:hover:border-blue-800 hover:bg-gray-50 dark:hover:bg-gray-700/50'}
+                  `}
                 >
-                  Soumettre mes réponses
-                </button>
-                {Object.keys(userAnswers).length !== questions.length && (
-                    <p className="text-sm text-gray-500 mt-2">Veuillez répondre à toutes les questions pour valider.</p>
-                )}
-              </div>
+                  <input
+                    type="radio"
+                    name={`question-${currentIndex}`}
+                    value={option}
+                    checked={isSelected}
+                    onChange={() => handleOptionChange(currentIndex, option)}
+                    className="w-5 h-5 text-blue-600 border-gray-300 focus:ring-blue-500"
+                  />
+                  <span className="ml-4 text-gray-700 dark:text-gray-300 font-medium">{option}</span>
+                </label>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Navigation */}
+        <div className="mt-8 flex justify-between items-center">
+          <button
+            onClick={prevQuestion}
+            disabled={currentIndex === 0}
+            className="px-6 py-2.5 rounded-xl font-semibold text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 disabled:opacity-0 transition-all"
+          >
+            Précédent
+          </button>
+          
+          {currentIndex === questions.length - 1 ? (
+            <button
+              onClick={handleSubmit}
+              disabled={Object.keys(userAnswers).length < questions.length}
+              className="px-8 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-lg shadow-blue-500/30 disabled:opacity-50 disabled:cursor-not-allowed transition-all transform active:scale-95"
+            >
+              Terminer le test
+            </button>
+          ) : (
+            <button
+              onClick={nextQuestion}
+              disabled={!isAnswered}
+              className="px-8 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-lg shadow-blue-500/30 disabled:opacity-50 disabled:cursor-not-allowed transition-all transform active:scale-95"
+            >
+              Suivant
+            </button>
           )}
         </div>
+        {Object.keys(userAnswers).length < questions.length && currentIndex === questions.length - 1 && (
+            <p className="text-center text-sm text-red-500 mt-4">Répondez à toutes les questions pour soumettre.</p>
+        )}
       </div>
+    );
+  };
+
+  const renderResult = () => {
+    return (
+      <div className="max-w-2xl mx-auto w-full text-center">
+        <div className={`p-8 rounded-3xl shadow-2xl ${isPassed ? 'bg-green-50 dark:bg-green-900/20 border-green-100 dark:border-green-800' : 'bg-red-50 dark:bg-red-900/20 border-red-100 dark:border-red-800'} border-2`}>
+          <div className={`w-20 h-20 mx-auto mb-6 rounded-full flex items-center justify-center ${isPassed ? 'bg-green-500' : 'bg-red-500'} text-white text-4xl`}>
+            {isPassed ? '✓' : '✕'}
+          </div>
+          <h2 className={`text-3xl font-extrabold mb-2 ${isPassed ? 'text-green-800 dark:text-green-400' : 'text-red-800 dark:text-red-400'}`}>
+            {isPassed ? 'Félicitations !' : 'Essai non concluant'}
+          </h2>
+          <p className="text-xl text-gray-600 dark:text-gray-400 mb-8">
+            {isPassed ? 'Vous avez réussi l\'examen civique.' : 'Vous n\'avez pas encore atteint les 80% requis.'}
+          </p>
+          
+          <div className="grid grid-cols-2 gap-4 mb-8 text-left">
+            <div className="bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+              <p className="text-sm text-gray-500 dark:text-gray-400">Score</p>
+              <p className="text-2xl font-bold text-gray-900 dark:text-white">{score} / {questions.length}</p>
+            </div>
+            <div className="bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+              <p className="text-sm text-gray-500 dark:text-gray-400">Pourcentage</p>
+              <p className="text-2xl font-bold text-gray-900 dark:text-white">{percentage}%</p>
+            </div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button
+              onClick={startNewQuiz}
+              className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-lg transition-all"
+            >
+              Recommencer
+            </button>
+            <button
+              onClick={() => setViewMode('review')}
+              className="px-8 py-3 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border-2 border-gray-200 dark:border-gray-700 font-bold rounded-xl hover:bg-gray-50 dark:hover:bg-gray-700 transition-all"
+            >
+              Voir mes erreurs
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+  const renderReview = () => {
+    return (
+      <div className="max-w-3xl mx-auto w-full">
+        <div className="flex justify-between items-center mb-8">
+          <h2 className="text-2xl font-bold dark:text-white">Correction détaillée</h2>
+          <button 
+            onClick={() => setViewMode('result')}
+            className="text-blue-600 dark:text-blue-400 font-semibold"
+          >
+            Retour au score
+          </button>
+        </div>
+        
+        <div className="space-y-6">
+          {questions.map((q, index) => {
+            const isCorrect = userAnswers[index] === q.answer;
+            return (
+              <div key={index} className={`p-6 rounded-2xl border-2 ${isCorrect ? 'border-green-100 dark:border-green-900 bg-green-50/30 dark:bg-green-900/10' : 'border-red-100 dark:border-red-900 bg-red-50/30 dark:bg-red-900/10'}`}>
+                <div className="flex gap-4">
+                  <span className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center font-bold ${isCorrect ? 'bg-green-500 text-white' : 'bg-red-500 text-white'}`}>
+                    {index + 1}
+                  </span>
+                  <div className="flex-1">
+                    <p className="font-bold text-gray-900 dark:text-white mb-4 text-lg">{q.question}</p>
+                    <div className="space-y-2">
+                      {q.options.map((option, optIndex) => {
+                        const isUserChoice = userAnswers[index] === option;
+                        const isCorrectOption = option === q.answer;
+                        
+                        let optionStyle = "p-3 rounded-xl text-sm font-medium border ";
+                        if (isCorrectOption) {
+                          optionStyle += "bg-green-100 dark:bg-green-900/40 border-green-500 text-green-800 dark:text-green-300";
+                        } else if (isUserChoice && !isCorrectOption) {
+                          optionStyle += "bg-red-100 dark:bg-red-900/40 border-red-500 text-red-800 dark:text-red-300";
+                        } else {
+                          optionStyle += "bg-white dark:bg-gray-800 border-gray-100 dark:border-gray-700 text-gray-500 dark:text-gray-400";
+                        }
+
+                        return (
+                          <div key={optIndex} className={optionStyle}>
+                            <div className="flex justify-between items-center">
+                              <span>{option}</span>
+                              {isCorrectOption && <span className="text-xs uppercase font-bold ml-2">Bonne réponse</span>}
+                              {isUserChoice && !isCorrectOption && <span className="text-xs uppercase font-bold ml-2">Votre choix</span>}
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        <div className="mt-12 text-center pb-12">
+          <button
+            onClick={startNewQuiz}
+            className="px-10 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-2xl shadow-xl transition-all"
+          >
+            Recommencer un nouveau test
+          </button>
+        </div>
+      </div>
+    );
+  };
+
+  return (
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300 py-8 px-4 sm:px-6 lg:px-8">
+      <header className="max-w-4xl mx-auto text-center mb-12">
+        <h1 className="text-4xl sm:text-5xl font-extrabold text-blue-900 dark:text-blue-400 mb-4 tracking-tight">
+          Examen Civique
+        </h1>
+        <div className="h-1 w-24 bg-blue-500 mx-auto rounded-full mb-4"></div>
+        <p className="text-gray-600 dark:text-gray-400 text-lg sm:text-xl max-w-lg mx-auto">
+          Préparez votre naturalisation avec notre simulateur d'entretien.
+        </p>
+      </header>
+
+      <main className="flex flex-col items-center">
+        {viewMode === 'quiz' && renderQuiz()}
+        {viewMode === 'result' && renderResult()}
+        {viewMode === 'review' && renderReview()}
+      </main>
+
+      <footer className="max-w-4xl mx-auto mt-20 text-center text-gray-400 dark:text-gray-600 text-sm">
+        <p>© 2026 Test Civique Naturalisation. Tous droits réservés.</p>
+      </footer>
+    </div>
   );
 }

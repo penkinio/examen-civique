@@ -318,6 +318,19 @@ export default function NaturalisationQuiz() {
                         );
                       })}
                     </div>
+                    
+                    {/* Detailed Answer Section */}
+                    <div className="mt-6 p-4 rounded-xl bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 text-blue-900 dark:text-blue-300">
+                      <div className="flex items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-3 mt-0.5 flex-shrink-0 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <div>
+                          <p className="text-xs uppercase font-bold tracking-wider mb-1 opacity-70">En savoir plus</p>
+                          <p className="text-sm font-medium leading-relaxed">{q.detailAnswer}</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

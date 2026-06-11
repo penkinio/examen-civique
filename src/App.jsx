@@ -1,5 +1,29 @@
 import { useState, useEffect } from 'react';
-import questionBank from './questions.json';
+import naturalisationBank from './qcm_naturalisation.json';
+import residentBank from './qcm_resident.json';
+import pluriannuelleBank from './qcm_complet_pluriannuelle.json';
+
+// Configuration des types de QCM
+const QUIZ_CONFIGS = {
+  naturalisation: {
+    name: "Naturalisation",
+    bank: naturalisationBank,
+    length: 40,
+    description: "Préparez votre entretien de naturalisation française."
+  },
+  resident: {
+    name: "Carte de Résident",
+    bank: residentBank,
+    length: 40,
+    description: "Test pour l'obtention de la carte de résident."
+  },
+  pluriannuelle: {
+    name: "Carte Pluriannuelle",
+    bank: pluriannuelleBank,
+    length: 40,
+    description: "Test pour la carte de séjour pluriannuelle."
+  }
+};
 
 // Fonction pour mélanger un tableau (Fisher-Yates)
 const shuffleArray = (array) => {
@@ -11,16 +35,16 @@ const shuffleArray = (array) => {
   return shuffled;
 };
 
-export default function NaturalisationQuiz() {
+export default function ExamenCivique() {
+  const [quizType, setQuizType] = useState('naturalisation');
   const [questions, setQuestions] = useState([]);
   const [userAnswers, setUserAnswers] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [score, setScore] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [timeLeft, setTimeLeft] = useState(45);
-  const [viewMode, setViewMode] = useState('quiz'); // 'quiz', 'result', 'review'
+  const [viewMode, setViewMode] = useState('selection'); // 'selection', 'quiz', 'result', 'review'
 
-  const QUIZ_LENGTH = 40;
   const TIMER_DURATION = 45;
 
   const categoryStyles = {
@@ -35,12 +59,13 @@ export default function NaturalisationQuiz() {
   const getCategoryStyle = (category) => categoryStyles[category] || categoryStyles["default"];
 
   useEffect(() => {
-    startNewQuiz();
+    // On ne lance plus le quiz automatiquement au montage
   }, []);
 
   const startNewQuiz = () => {
-    const shuffledBank = shuffleArray(questionBank);
-    const selectedQuestions = shuffledBank.slice(0, Math.min(QUIZ_LENGTH, shuffledBank.length));
+    const config = QUIZ_CONFIGS[quizType];
+    const shuffledBank = shuffleArray(config.bank);
+    const selectedQuestions = shuffledBank.slice(0, Math.min(config.length, shuffledBank.length));
 
     const questionsWithOptionsShuffled = selectedQuestions.map(q => ({
       ...q,
@@ -115,7 +140,51 @@ export default function NaturalisationQuiz() {
   const percentage = questions.length > 0 ? Math.round((score / questions.length) * 100) : 0;
   const isPassed = percentage >= 80;
 
-  if (questions.length === 0) return <div className="flex items-center justify-center min-h-screen">Chargement...</div>;
+  if (viewMode !== 'selection' && questions.length === 0) return <div className="flex items-center justify-center min-h-screen">Chargement...</div>;
+
+  const renderSelection = () => {
+    return (
+      <div className="max-w-2xl mx-auto w-full">
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
+          Choisissez votre type de test
+        </h2>
+        <div className="grid gap-4 mb-8">
+          {Object.entries(QUIZ_CONFIGS).map(([key, config]) => (
+            <button
+              key={key}
+              onClick={() => setQuizType(key)}
+              className={`p-6 rounded-2xl border-2 text-left transition-all ${
+                quizType === key
+                  ? 'border-blue-500 bg-blue-50 dark:bg-blue-900/20 shadow-md'
+                  : 'border-gray-200 dark:border-gray-700 hover:border-blue-200 dark:hover:border-blue-800'
+              }`}
+            >
+              <div className="flex justify-between items-center mb-2">
+                <span className="text-xl font-bold text-gray-900 dark:text-white">{config.name}</span>
+                {quizType === key && (
+                  <span className="bg-blue-500 text-white rounded-full p-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </span>
+                )}
+              </div>
+              <p className="text-gray-600 dark:text-gray-400">{config.description}</p>
+              <p className="mt-2 text-sm font-semibold text-blue-600 dark:text-blue-400">{config.length} questions</p>
+            </button>
+          ))}
+        </div>
+        <div className="flex justify-center">
+          <button
+            onClick={startNewQuiz}
+            className="px-12 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-2xl shadow-xl shadow-blue-500/30 transition-all transform active:scale-95"
+          >
+            Suivant
+          </button>
+        </div>
+      </div>
+    );
+  };
 
   const renderQuiz = () => {
     const q = questions[currentIndex];
@@ -221,6 +290,18 @@ export default function NaturalisationQuiz() {
   };
 
   const renderResult = () => {
+    const categoryStats = questions.reduce((acc, q, index) => {
+      const category = q.categorie;
+      if (!acc[category]) {
+        acc[category] = { total: 0, correct: 0 };
+      }
+      acc[category].total += 1;
+      if (userAnswers[index] === q.answer) {
+        acc[category].correct += 1;
+      }
+      return acc;
+    }, {});
+
     return (
       <div className="max-w-2xl mx-auto w-full text-center">
         <div className={`p-8 rounded-3xl shadow-2xl ${isPassed ? 'bg-green-50 dark:bg-green-900/20 border-green-100 dark:border-green-800' : 'bg-red-50 dark:bg-red-900/20 border-red-100 dark:border-red-800'} border-2`}>
@@ -236,7 +317,7 @@ export default function NaturalisationQuiz() {
           
           <div className="grid grid-cols-2 gap-4 mb-8 text-left">
             <div className="bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
-              <p className="text-sm text-gray-500 dark:text-gray-400">Score</p>
+              <p className="text-sm text-gray-500 dark:text-gray-400">Score global</p>
               <p className="text-2xl font-bold text-gray-900 dark:text-white">{score} / {questions.length}</p>
             </div>
             <div className="bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
@@ -245,9 +326,34 @@ export default function NaturalisationQuiz() {
             </div>
           </div>
 
+          <div className="mb-8 text-left">
+            <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">Résultats par catégorie</h3>
+            <div className="space-y-3">
+              {Object.entries(categoryStats).map(([category, stats]) => {
+                const catPercentage = Math.round((stats.correct / stats.total) * 100);
+                return (
+                  <div key={category} className="bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+                    <div className="flex justify-between items-center mb-2">
+                      <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider border ${getCategoryStyle(category)}`}>
+                        {category}
+                      </span>
+                      <span className="text-sm font-bold text-gray-900 dark:text-white">{stats.correct} / {stats.total} ({catPercentage}%)</span>
+                    </div>
+                    <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-1.5">
+                      <div 
+                        className={`h-1.5 rounded-full transition-all duration-500 ${catPercentage >= 80 ? 'bg-green-500' : catPercentage >= 50 ? 'bg-amber-500' : 'bg-red-500'}`}
+                        style={{ width: `${catPercentage}%` }}
+                      ></div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
-              onClick={startNewQuiz}
+              onClick={() => setViewMode('selection')}
               className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-lg transition-all"
             >
               Recommencer
@@ -340,10 +446,10 @@ export default function NaturalisationQuiz() {
 
         <div className="mt-12 text-center pb-12">
           <button
-            onClick={startNewQuiz}
+            onClick={() => setViewMode('selection')}
             className="px-10 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-2xl shadow-xl transition-all"
           >
-            Recommencer un nouveau test
+            Changer de test
           </button>
         </div>
       </div>
@@ -358,18 +464,21 @@ export default function NaturalisationQuiz() {
         </h1>
         <div className="h-1 w-24 bg-blue-500 mx-auto rounded-full mb-4"></div>
         <p className="text-gray-600 dark:text-gray-400 text-lg sm:text-xl max-w-lg mx-auto">
-          Préparez votre naturalisation avec notre simulateur d'entretien.
+          {viewMode === 'selection' 
+            ? "Sélectionnez le type de questionnaire pour commencer." 
+            : QUIZ_CONFIGS[quizType].description}
         </p>
       </header>
 
       <main className="flex flex-col items-center">
+        {viewMode === 'selection' && renderSelection()}
         {viewMode === 'quiz' && renderQuiz()}
         {viewMode === 'result' && renderResult()}
         {viewMode === 'review' && renderReview()}
       </main>
 
       <footer className="max-w-4xl mx-auto mt-20 text-center text-gray-400 dark:text-gray-600 text-sm">
-        <p>© 2026 Test Civique Naturalisation. Tous droits réservés.</p>
+        <p>© 2026 Examen Civique. Tous droits réservés.</p>
       </footer>
     </div>
   );

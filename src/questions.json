@@ -1,1332 +1,192 @@
 [
-  {
-    "id": 1,
-    "categorie": "Principes et valeurs de la République",
-    "question": "Complétez les paroles de la Marseillaise \"Allons enfants de la patrie...\"",
-    "options": ["Le jour de gloire est arrivé", "L'étendard sanglant est levé", "Marchons, marchons", "Formez vos bataillons"],
-    "answer": "Le jour de gloire est arrivé"
-  },
-  {
-    "id": 2,
-    "categorie": "Principes et valeurs de la République",
-    "question": "Dans le cadre d'un entretien d'embauche, que peut-on demander au candidat ?",
-    "options": ["Ses diplômes et expériences professionnelles", "Sa religion", "Ses opinions politiques", "Ses origines ethniques"],
-    "answer": "Ses diplômes et expériences professionnelles"
-  },
-  {
-    "id": 3,
-    "categorie": "Principes et valeurs de la République",
-    "question": "Déclarer ses revenus aux services fiscaux est :",
-    "options": ["Une obligation légale", "Facultatif", "Réservé aux citoyens français", "Seulement pour les fonctionnaires"],
-    "answer": "Une obligation légale"
-  },
-  {
-    "id": 4,
-    "categorie": "Principes et valeurs de la République",
-    "question": "En France, les impôts permettent de financer les dépenses publiques. Quelle proposition est correcte ?",
-    "options": ["Ils financent les écoles, hôpitaux et infrastructures", "Ils sont reversés à l'Union Européenne uniquement", "Ils servent à payer les campagnes électorales", "Ils ne financent que l'armée"],
-    "answer": "Ils financent les écoles, hôpitaux et infrastructures"
-  },
-  {
-    "id": 5,
-    "categorie": "Principes et valeurs de la République",
-    "question": "La liberté d'association est :",
-    "options": ["Garantie par la loi", "Interdite en France", "Soumise à autorisation du préfet", "Payante"],
-    "answer": "Garantie par la loi"
-  },
-  {
-    "id": 6,
-    "categorie": "Principes et valeurs de la République",
-    "question": "La liberté d'expression sur les réseaux sociaux en France est :",
-    "options": ["Limitée par la loi (diffamation, racisme interdits)", "Totale et sans aucune limite", "Interdite", "Réservée aux majeurs"],
-    "answer": "Limitée par la loi (diffamation, racisme interdits)"
-  },
-  {
-    "id": 7,
-    "categorie": "Principes et valeurs de la République",
-    "question": "Lequel de ces prénoms évoque un symbole de la République ?",
-    "options": ["Marianne", "Jeanne", "Marie", "Joséphine"],
-    "answer": "Marianne"
-  },
-  {
-    "id": 8,
-    "categorie": "Principes et valeurs de la République",
-    "question": "Lequel de ces symboles représente la République française ?",
-    "options": ["Le drapeau tricolore", "La fleur de lys", "L'aigle impérial", "La croix celtique"],
-    "answer": "Le drapeau tricolore"
-  },
-  {
-    "id": 9,
-    "categorie": "Principes et valeurs de la République",
-    "question": "Où peut-on voir la devise de la République ?",
-    "options": ["Sur le fronton des mairies", "Uniquement à l'Assemblée Nationale", "Sur les billets de banque", "Dans les églises"],
-    "answer": "Sur le fronton des mairies"
-  },
-  {
-    "id": 10,
-    "categorie": "Principes et valeurs de la République",
-    "question": "Lesquels sont des symboles officiels de la République française ?",
-    "options": ["Le drapeau bleu-blanc-rouge et la Marseillaise", "Le coq et le béret", "La baguette et le camembert", "La Tour Eiffel et le Louvre"],
-    "answer": "Le drapeau bleu-blanc-rouge et la Marseillaise"
-  },
-  {
-    "id": 11,
-    "categorie": "Principes et valeurs de la République",
-    "question": "Peut-on brûler publiquement un drapeau français ?",
-    "options": ["Non, c'est un délit puni par la loi", "Oui, au nom de la liberté d'expression", "Oui, mais seulement le 14 juillet", "Non, sauf autorisation de la mairie"],
-    "answer": "Non, c'est un délit puni par la loi"
-  },
-  {
-    "id": 12,
-    "categorie": "Principes et valeurs de la République",
-    "question": "Quand la sécurité sociale a-t-elle été établie en France ?",
-    "options": ["1945", "1789", "1905", "1958"],
-    "answer": "1945"
-  },
-  {
-    "id": 13,
-    "categorie": "Principes et valeurs de la République",
-    "question": "Que commémore la fête nationale ?",
-    "options": ["La prise de la Bastille et la fête de la Fédération", "L'armistice de 1918", "La libération de Paris", "L'appel du 18 juin"],
-    "answer": "La prise de la Bastille et la fête de la Fédération"
-  },
-  {
-    "id": 14,
-    "categorie": "Principes et valeurs de la République",
-    "question": "Que porte Marianne sur la tête ?",
-    "options": ["Un bonnet phrygien", "Une couronne", "Un béret", "Un foulard"],
-    "answer": "Un bonnet phrygien"
-  },
-  {
-    "id": 15,
-    "categorie": "Principes et valeurs de la République",
-    "question": "Que signifie le mot \"fraternité\" dans la devise française ?",
-    "options": ["La solidarité entre les citoyens", "Le droit d'avoir des frères", "L'obligation d'aider sa famille", "L'égalité des salaires"],
-    "answer": "La solidarité entre les citoyens"
-  },
-  {
-    "id": 16,
-    "categorie": "Principes et valeurs de la République",
-    "question": "Quel symbole de la République peut-on voir sur les maillots de l'équipe de France de football ?",
-    "options": ["Le coq", "Marianne", "L'hexagone", "Le drapeau européen"],
-    "answer": "Le coq"
-  },
-  {
-    "id": 17,
-    "categorie": "Principes et valeurs de la République",
-    "question": "Quelle est la devise de la République française ?",
-    "options": ["Liberté, Égalité, Fraternité", "Travail, Famille, Patrie", "Paix, Justice, Solidarité", "Unité, Indivisibilité, Laïcité"],
-    "answer": "Liberté, Égalité, Fraternité"
-  },
-  {
-    "id": 18,
-    "categorie": "Principes et valeurs de la République",
-    "question": "Qu'est-ce que la liberté d'association ?",
-    "options": ["Le droit de créer ou de rejoindre une association", "Le droit de s'associer pour frauder les impôts", "L'obligation d'être dans un syndicat", "Le droit de faire du commerce"],
-    "answer": "Le droit de créer ou de rejoindre une association"
-  },
-  {
-    "id": 19,
-    "categorie": "Principes et valeurs de la République",
-    "question": "Qu'est-ce qu'une liberté ?",
-    "options": ["Le pouvoir d'agir dans le respect des droits des autres et de la loi", "Le droit de faire tout ce qu'on veut", "Une autorisation donnée par le maire", "Le droit de ne pas payer d'impôts"],
-    "answer": "Le pouvoir d'agir dans le respect des droits des autres et de la loi"
-  },
-  {
-    "id": 20,
-    "categorie": "Principes et valeurs de la République",
-    "question": "Selon la Constitution, la France est une République...",
-    "options": ["Indivisible, laïque, démocratique et sociale", "Catholique, royale et unifiée", "Fédérale, libérale et européenne", "Autoritaire, unie et protectrice"],
-    "answer": "Indivisible, laïque, démocratique et sociale"
-  },
-  {
-    "id": 21,
-    "categorie": "Principes et valeurs de la République",
-    "question": "Sur quel document peut-on voir Marianne ?",
-    "options": ["Les timbres-poste et les pièces de monnaie", "Les permis de conduire uniquement", "Les factures d'électricité", "Les cartes de transport"],
-    "answer": "Les timbres-poste et les pièces de monnaie"
-  },
-  {
-    "id": 22,
-    "categorie": "Principes et valeurs de la République",
-    "question": "Une des valeurs de la devise républicaine est l'Égalité. Qu'est-ce que cela signifie ?",
-    "options": ["Que tous les citoyens ont les mêmes droits et devoirs devant la loi", "Que tout le monde doit gagner le même salaire", "Que tout le monde doit penser la même chose", "Qu'il n'y a plus de riches ni de pauvres"],
-    "answer": "Que tous les citoyens ont les mêmes droits et devoirs devant la loi"
-  },
-  {
-    "id": 23,
-    "categorie": "Principes et valeurs de la République",
-    "question": "Une personne peut-elle changer librement de religion en France ?",
-    "options": ["Oui, c'est garanti par la liberté de conscience", "Non, c'est interdit par la loi", "Oui, mais il faut une autorisation de l'État", "Seulement à sa majorité"],
-    "answer": "Oui, c'est garanti par la liberté de conscience"
-  },
-  {
-    "id": 24,
-    "categorie": "Principes et valeurs de la République",
-    "question": "Selon le principe de laïcité, que signifie la neutralité de l'État ?",
-    "options": ["L'État ne favorise ni ne finance aucune religion", "L'État interdit toutes les religions", "L'État impose une religion officielle", "L'État contrôle les prières privées"],
-    "answer": "L'État ne favorise ni ne finance aucune religion"
-  },
-  {
-    "id": 25,
-    "categorie": "Principes et valeurs de la République",
-    "question": "Que peut faire un usager du service public dans une mairie ?",
-    "options": ["Demander des documents d'état civil (acte de naissance, etc.)", "Prier dans le hall", "Ouvrir un compte bancaire", "Acheter des médicaments"],
-    "answer": "Demander des documents d'état civil (acte de naissance, etc.)"
-  },
-  {
-    "id": 26,
-    "categorie": "Principes et valeurs de la République",
-    "question": "En France, il est possible pour l'État de financer :",
-    "options": ["L'entretien des édifices religieux construits avant 1905", "La construction de nouvelles églises", "Le salaire des prêtres et imams", "L'achat de livres sacrés pour les fidèles"],
-    "answer": "L'entretien des édifices religieux construits avant 1905"
-  },
-  {
-    "id": 27,
-    "categorie": "Principes et valeurs de la République",
-    "question": "En quelle année la loi de séparation des Églises et de l'État a-t-elle été votée ?",
-    "options": ["1905", "1789", "1945", "1958"],
-    "answer": "1905"
-  },
-  {
-    "id": 28,
-    "categorie": "Principes et valeurs de la République",
-    "question": "Que dit la loi de 1905 ?",
-    "options": ["Elle sépare les Églises et l'État", "Elle instaure l'école gratuite", "Elle abolit la peine de mort", "Elle donne le droit de vote aux femmes"],
-    "answer": "Elle sépare les Églises et l'État"
-  },
-  {
-    "id": 29,
-    "categorie": "Principes et valeurs de la République",
-    "question": "Que garantit le principe de laïcité ?",
-    "options": ["La liberté de conscience et de culte", "L'interdiction de toute religion", "L'obligation d'être athée", "Le financement des cultes par l'État"],
-    "answer": "La liberté de conscience et de culte"
-  },
-  {
-    "id": 30,
-    "categorie": "Principes et valeurs de la République",
-    "question": "Quel jour célèbre-t-on officiellement la laïcité en France ?",
-    "options": ["Le 9 décembre", "Le 14 juillet", "Le 1er mai", "Le 11 novembre"],
-    "answer": "Le 9 décembre"
-  },
-  {
-    "id": 31,
-    "categorie": "Principes et valeurs de la République",
-    "question": "Quel symbole religieux peut être porté dans une école publique dans le respect de la laïcité ?",
-    "options": ["Un signe religieux discret", "Un voile intégral", "Une grande croix ostentatoire", "Une kippa visible"],
-    "answer": "Un signe religieux discret"
-  },
-  {
-    "id": 32,
-    "categorie": "Principes et valeurs de la République",
-    "question": "Quel terme désigne précisément la haine ou les préjugés contre les Juifs ?",
-    "options": ["L'antisémitisme", "Le racisme", "La xénophobie", "L'islamophobie"],
-    "answer": "L'antisémitisme"
-  },
-  {
-    "id": 33,
-    "categorie": "Principes et valeurs de la République",
-    "question": "Quel texte est considéré comme le texte fondateur de la laïcité ?",
-    "options": ["La loi de séparation des Églises et de l'État de 1905", "La Déclaration des droits de l'homme de 1789", "La Constitution de 1958", "Le Code civil"],
-    "answer": "La loi de séparation des Églises et de l'État de 1905"
-  },
-  {
-    "id": 34,
-    "categorie": "Principes et valeurs de la République",
-    "question": "Quelle institution française doit rester neutre en matière de religion ?",
-    "options": ["L'État et l'école publique", "Les entreprises privées", "Les associations sportives", "Les syndicats"],
-    "answer": "L'État et l'école publique"
-  },
-  {
-    "id": 35,
-    "categorie": "Principes et valeurs de la République",
-    "question": "Qu'est-ce que la laïcité ?",
-    "options": ["Un principe qui sépare l'État et les organisations religieuses", "Une religion d'État", "L'interdiction de croire en Dieu", "La tolérance de certaines religions seulement"],
-    "answer": "Un principe qui sépare l'État et les organisations religieuses"
-  },
-  {
-    "id": 36,
-    "categorie": "Principes et valeurs de la République",
-    "question": "À l'école, la charte de la laïcité permet de :",
-    "options": ["Rappeler les règles du vivre-ensemble et de la laïcité", "Interdire la mixité filles/garçons", "Remplacer le règlement intérieur", "Imposer un uniforme"],
-    "answer": "Rappeler les règles du vivre-ensemble et de la laïcité"
-  },
-  {
-    "id": 37,
-    "categorie": "Principes et valeurs de la République",
-    "question": "Qui doit respecter et veiller à la neutralité religieuse dans les services publics ?",
-    "options": ["Les agents du service public", "Les usagers uniquement", "Les enfants", "Les élus d'associations"],
-    "answer": "Les agents du service public"
-  },
-  {
-    "id": 38,
-    "categorie": "Principes et valeurs de la République",
-    "question": "Une personne déclare ne croire en aucun dieu. On peut dire :",
-    "options": ["Qu'elle est athée", "Qu'elle est agnostique", "Qu'elle est laïque", "Qu'elle est croyante"],
-    "answer": "Qu'elle est athée"
-  },
-  {
-    "id": 39,
-    "categorie": "Système institutionnel et politique",
-    "question": "Comment est désigné le Premier ministre ?",
-    "options": ["Il est nommé par le Président de la République", "Il est élu par les citoyens", "Il est tiré au sort", "Il est choisi par le Sénat"],
-    "answer": "Il est nommé par le Président de la République"
-  },
-  {
-    "id": 40,
-    "categorie": "Système institutionnel et politique",
-    "question": "Qui peut se présenter aux élections présidentielles ?",
-    "options": ["Tout citoyen français majeur remplissant les conditions légales", "Seulement les maires", "Seulement les personnes de plus de 40 ans", "Tout résident en France depuis 10 ans"],
-    "answer": "Tout citoyen français majeur remplissant les conditions légales"
-  },
-  {
-    "id": 41,
-    "categorie": "Système institutionnel et politique",
-    "question": "À qui appartient la souveraineté nationale ?",
-    "options": ["Au peuple", "Au Président de la République", "Au gouvernement", "Aux juges"],
-    "answer": "Au peuple"
-  },
-  {
-    "id": 42,
-    "categorie": "Système institutionnel et politique",
-    "question": "Qui est élu lors des élections municipales ?",
-    "options": ["Les conseillers municipaux", "Les députés", "Les sénateurs", "Le préfet"],
-    "answer": "Les conseillers municipaux"
-  },
-  {
-    "id": 43,
-    "categorie": "Système institutionnel et politique",
-    "question": "L'inscription sur les listes électorales est :",
-    "options": ["Nécessaire pour pouvoir voter", "Automatique pour les étrangers", "Payante", "Réservée aux plus de 21 ans"],
-    "answer": "Nécessaire pour pouvoir voter"
-  },
-  {
-    "id": 44,
-    "categorie": "Système institutionnel et politique",
-    "question": "Quelle condition est nécessaire pour voter aux élections présidentielles ?",
-    "options": ["Être citoyen français et majeur", "Être propriétaire", "Payer des impôts", "Avoir un emploi"],
-    "answer": "Être citoyen français et majeur"
-  },
-  {
-    "id": 45,
-    "categorie": "Système institutionnel et politique",
-    "question": "Quelle condition faut-il remplir pour être candidat aux élections municipales ?",
-    "options": ["Être inscrit sur les listes électorales de la commune", "Avoir un casier judiciaire vierge uniquement", "Être né dans la commune", "Être fonctionnaire"],
-    "answer": "Être inscrit sur les listes électorales de la commune"
-  },
-  {
-    "id": 46,
-    "categorie": "Système institutionnel et politique",
-    "question": "Parmi ces autorités, laquelle est élue ?",
-    "options": ["Le Maire", "Le Préfet", "Le Ministre de l'Intérieur", "Le Directeur de la Police"],
-    "answer": "Le Maire"
-  },
-  {
-    "id": 47,
-    "categorie": "Système institutionnel et politique",
-    "question": "Quelles sont les fonctions du maire ?",
-    "options": ["Il gère la commune et représente l'État", "Il vote les lois à l'Assemblée", "Il juge les délits", "Il dirige l'armée"],
-    "answer": "Il gère la commune et représente l'État"
-  },
-  {
-    "id": 48,
-    "categorie": "Système institutionnel et politique",
-    "question": "Qui peut se présenter aux élections présidentielles ?",
-    "options": ["Un citoyen français majeur avec 500 parrainages d'élus", "Tout résident européen", "Les personnes ayant plus de 10 ans d'ancienneté en politique", "Uniquement les chefs de partis"],
-    "answer": "Un citoyen français majeur avec 500 parrainages d'élus"
-  },
-  {
-    "id": 49,
-    "categorie": "Système institutionnel et politique",
-    "question": "Une personne, n'ayant pas d'accès à internet, veut s'inscrire sur les listes électorales pour pouvoir voter. Où peut-elle s'inscrire ?",
-    "options": ["À la mairie de sa commune", "Au commissariat", "À la poste", "À la préfecture"],
-    "answer": "À la mairie de sa commune"
-  },
-  {
-    "id": 50,
-    "categorie": "Système institutionnel et politique",
-    "question": "À quel âge peut-on devenir électeur ?",
-    "options": ["18 ans", "16 ans", "21 ans", "25 ans"],
-    "answer": "18 ans"
-  },
-  {
-    "id": 51,
-    "categorie": "Système institutionnel et politique",
-    "question": "En France, est-ce obligatoire de voter ?",
-    "options": ["Non, c'est un droit mais pas une obligation", "Oui, sinon on paie une amende", "Oui, sauf pour les élections européennes", "Non, sauf si on travaille pour l'État"],
-    "answer": "Non, c'est un droit mais pas une obligation"
-  },
-  {
-    "id": 52,
-    "categorie": "Système institutionnel et politique",
-    "question": "A-t-on le droit de ne pas respecter une loi ?",
-    "options": ["Non, nul n'est censé ignorer la loi", "Oui, si on n'est pas d'accord avec", "Oui, si on est étranger", "Oui, avec l'accord du maire"],
-    "answer": "Non, nul n'est censé ignorer la loi"
-  },
-  {
-    "id": 53,
-    "categorie": "Système institutionnel et politique",
-    "question": "Comment sont désignés les députés ?",
-    "options": ["Ils sont élus au suffrage universel direct", "Ils sont nommés par le Président", "Ils sont tirés au sort", "Ils sont élus par les maires"],
-    "answer": "Ils sont élus au suffrage universel direct"
-  },
-  {
-    "id": 54,
-    "categorie": "Système institutionnel et politique",
-    "question": "Qui vote les lois ?",
-    "options": ["Le Parlement (Assemblée nationale et Sénat)", "Le Président de la République", "Le Premier ministre", "Les juges"],
-    "answer": "Le Parlement (Assemblée nationale et Sénat)"
-  },
-  {
-    "id": 55,
-    "categorie": "Système institutionnel et politique",
-    "question": "La séparation des pouvoirs est un principe fondamental. Quels sont les trois pouvoirs concernés ?",
-    "options": ["Exécutif, législatif, judiciaire", "Exécutif, politique, économique", "Législatif, médiatique, militaire", "Judiciaire, religieux, politique"],
-    "answer": "Exécutif, législatif, judiciaire"
-  },
-  {
-    "id": 56,
-    "categorie": "Système institutionnel et politique",
-    "question": "Qu'est-ce que l'État de droit ?",
-    "options": ["Un système où tous sont soumis au respect du droit, y compris l'État", "Un État gouverné par la police", "Un État où le Président décide de tout", "Un pays sans lois"],
-    "answer": "Un système où tous sont soumis au respect du droit, y compris l'État"
-  },
-  {
-    "id": 57,
-    "categorie": "Système institutionnel et politique",
-    "question": "Quelles sont les durées du mandat du conseil municipal et du maire ?",
-    "options": ["6 ans", "5 ans", "7 ans", "4 ans"],
-    "answer": "6 ans"
-  },
-  {
-    "id": 58,
-    "categorie": "Système institutionnel et politique",
-    "question": "Qui est élu lors des élections législatives ?",
-    "options": ["Les députés", "Les sénateurs", "Les maires", "Le Président de la République"],
-    "answer": "Les députés"
-  },
-  {
-    "id": 59,
-    "categorie": "Système institutionnel et politique",
-    "question": "Quelle est la durée du mandat du Président de la République française ?",
-    "options": ["5 ans", "7 ans", "4 ans", "6 ans"],
-    "answer": "5 ans"
-  },
-  {
-    "id": 60,
-    "categorie": "Système institutionnel et politique",
-    "question": "Quelle est la durée du mandat des députés ?",
-    "options": ["5 ans", "6 ans", "7 ans", "4 ans"],
-    "answer": "5 ans"
-  },
-  {
-    "id": 61,
-    "categorie": "Système institutionnel et politique",
-    "question": "Quelle est la durée du mandat des sénateurs ?",
-    "options": ["6 ans", "5 ans", "7 ans", "9 ans"],
-    "answer": "6 ans"
-  },
-  {
-    "id": 62,
-    "categorie": "Système institutionnel et politique",
-    "question": "Qui dirige l'action du gouvernement ?",
-    "options": ["Le Premier ministre", "Le Président de la République", "Le Ministre de l'Intérieur", "Le Président de l'Assemblée nationale"],
-    "answer": "Le Premier ministre"
-  },
-  {
-    "id": 63,
-    "categorie": "Système institutionnel et politique",
-    "question": "En France, est-ce possible d'adhérer à un parti politique ?",
-    "options": ["Oui, c'est un droit constitutionnel", "Non, c'est interdit", "Seulement si on est élu", "Oui, mais il faut payer une taxe à l'État"],
-    "answer": "Oui, c'est un droit constitutionnel"
-  },
-  {
-    "id": 64,
-    "categorie": "Système institutionnel et politique",
-    "question": "Qui sanctionne l'auteur d'un vol ?",
-    "options": ["Le juge dans un tribunal", "La police", "Le maire", "Le préfet"],
-    "answer": "Le juge dans un tribunal"
-  },
-  {
-    "id": 65,
-    "categorie": "Système institutionnel et politique",
-    "question": "Qui gère les collèges publics ?",
-    "options": ["Le Département", "La Région", "La Commune", "L'État central"],
-    "answer": "Le Département"
-  },
-  {
-    "id": 66,
-    "categorie": "Système institutionnel et politique",
-    "question": "Qui gère les écoles primaires et maternelles publiques ?",
-    "options": ["La Commune", "Le Département", "La Région", "Le Ministère"],
-    "answer": "La Commune"
-  },
-  {
-    "id": 67,
-    "categorie": "Système institutionnel et politique",
-    "question": "Comment sont désignés les maires ?",
-    "options": ["Ils sont élus par le conseil municipal", "Ils sont nommés par le Préfet", "Ils sont élus directement au suffrage universel", "Ils sont tirés au sort"],
-    "answer": "Ils sont élus par le conseil municipal"
-  },
-  {
-    "id": 68,
-    "categorie": "Système institutionnel et politique",
-    "question": "Quelle collectivité territoriale est responsable des transports régionaux ?",
-    "options": ["La Région", "Le Département", "La Commune", "L'État"],
-    "answer": "La Région"
-  },
-  {
-    "id": 69,
-    "categorie": "Système institutionnel et politique",
-    "question": "Quelle est l'une des voies possibles pour modifier la Constitution ?",
-    "options": ["Le référendum", "Un décret du maire", "Un arrêté préfectoral", "Le vote du seul Sénat"],
-    "answer": "Le référendum"
-  },
-  {
-    "id": 70,
-    "categorie": "Système institutionnel et politique",
-    "question": "Qui assure l'intérim du président de la République en cas de décès ?",
-    "options": ["Le Président du Sénat", "Le Premier ministre", "Le Président de l'Assemblée nationale", "Le Ministre de l'Intérieur"],
-    "answer": "Le Président du Sénat"
-  },
-  {
-    "id": 71,
-    "categorie": "Système institutionnel et politique",
-    "question": "Quel est le rôle du Conseil constitutionnel ?",
-    "options": ["Vérifier que les lois sont conformes à la Constitution", "Élire le Président de la République", "Juger les criminels", "Voter le budget de l'État"],
-    "answer": "Vérifier que les lois sont conformes à la Constitution"
-  },
-  {
-    "id": 72,
-    "categorie": "Système institutionnel et politique",
-    "question": "Quelle condition est obligatoire pour se présenter à l'élection présidentielle ?",
-    "options": ["Recueillir 500 parrainages d'élus", "Avoir fait son service militaire", "Avoir un diplôme universitaire", "Payer l'impôt sur la fortune"],
-    "answer": "Recueillir 500 parrainages d'élus"
-  },
-  {
-    "id": 73,
-    "categorie": "Système institutionnel et politique",
-    "question": "Combien y a-t-il de départements en France ?",
-    "options": ["101", "95", "100", "110"],
-    "answer": "101"
-  },
-  {
-    "id": 74,
-    "categorie": "Système institutionnel et politique",
-    "question": "Comment est organisé le découpage administratif de la France ?",
-    "options": ["Communes, Départements, Régions", "Cantons, Provinces, États", "Quartiers, Arrondissements, Métropoles", "Villes, Comtés, Régions"],
-    "answer": "Communes, Départements, Régions"
-  },
-  {
-    "id": 75,
-    "categorie": "Système institutionnel et politique",
-    "question": "Qui représente l'État dans un département ?",
-    "options": ["Le préfet", "Le maire du chef-lieu", "Le député", "Le président du Conseil départemental"],
-    "answer": "Le préfet"
-  },
-  {
-    "id": 76,
-    "categorie": "Système institutionnel et politique",
-    "question": "Quel est le rôle du Président de la République ?",
-    "options": ["Il veille au respect de la Constitution et est le chef des armées", "Il vote les lois", "Il juge les infractions", "Il dirige la mairie de Paris"],
-    "answer": "Il veille au respect de la Constitution et est le chef des armées"
-  },
-  {
-    "id": 77,
-    "categorie": "Système institutionnel et politique",
-    "question": "Quel est le rôle du Premier ministre ?",
-    "options": ["Il dirige l'action du Gouvernement", "Il préside le Sénat", "Il promulgue les lois", "Il nomme le Président"],
-    "answer": "Il dirige l'action du Gouvernement"
-  },
-  {
-    "id": 78,
-    "categorie": "Système institutionnel et politique",
-    "question": "Quel est le rôle du Défenseur des droits ?",
-    "options": ["Protéger les droits et libertés des citoyens", "Défendre la France à l'étranger", "Avocat gratuit pour tous", "Juger les policiers"],
-    "answer": "Protéger les droits et libertés des citoyens"
-  },
-  {
-    "id": 79,
-    "categorie": "Système institutionnel et politique",
-    "question": "En quelle année la citoyenneté européenne a-t-elle été créée ?",
-    "options": ["1992 (Traité de Maastricht)", "1957", "2002", "1945"],
-    "answer": "1992 (Traité de Maastricht)"
-  },
-  {
-    "id": 80,
-    "categorie": "Système institutionnel et politique",
-    "question": "Quel est le dernier État à avoir intégré l'Union Européenne en 2013 ?",
-    "options": ["La Croatie", "La Roumanie", "La Bulgarie", "La Serbie"],
-    "answer": "La Croatie"
-  },
-  {
-    "id": 81,
-    "categorie": "Système institutionnel et politique",
-    "question": "Qui a composé l'hymne de l'Union européenne ?",
-    "options": ["Ludwig van Beethoven (Ode à la joie)", "Wolfgang Amadeus Mozart", "Frédéric Chopin", "Claude Debussy"],
-    "answer": "Ludwig van Beethoven (Ode à la joie)"
-  },
-  {
-    "id": 82,
-    "categorie": "Système institutionnel et politique",
-    "question": "Quand est célébrée la journée de l'Europe ?",
-    "options": ["Le 9 mai", "Le 14 juillet", "Le 1er janvier", "Le 8 mai"],
-    "answer": "Le 9 mai"
-  },
-  {
-    "id": 83,
-    "categorie": "Système institutionnel et politique",
-    "question": "Où est le siège de la Banque centrale européenne ?",
-    "options": ["Francfort", "Bruxelles", "Strasbourg", "Paris"],
-    "answer": "Francfort"
-  },
-  {
-    "id": 84,
-    "categorie": "Système institutionnel et politique",
-    "question": "Où est le siège de la Commission européenne ?",
-    "options": ["Bruxelles", "Strasbourg", "Luxembourg", "Genève"],
-    "answer": "Bruxelles"
-  },
-  {
-    "id": 85,
-    "categorie": "Système institutionnel et politique",
-    "question": "Qui siège au Parlement européen ?",
-    "options": ["Les députés européens élus par les citoyens de l'UE", "Les présidents des pays membres", "Des juges internationaux", "Des ambassadeurs"],
-    "answer": "Les députés européens élus par les citoyens de l'UE"
-  },
-  {
-    "id": 86,
-    "categorie": "Système institutionnel et politique",
-    "question": "Les citoyens de l'Union européenne peuvent-ils voter aux élections locales dans un autre État de l'Union ?",
-    "options": ["Oui, aux élections municipales et européennes", "Non, c'est interdit", "Oui, mais uniquement pour les présidentielles", "Seulement s'ils ont la double nationalité"],
-    "answer": "Oui, aux élections municipales et européennes"
-  },
-  {
-    "id": 87,
-    "categorie": "Système institutionnel et politique",
-    "question": "Combien d'États font partie de l'Union européenne au 1er janvier 2025 ?",
-    "options": ["27", "28", "25", "30"],
-    "answer": "27"
-  },
-  {
-    "id": 88,
-    "categorie": "Système institutionnel et politique",
-    "question": "En quelle année le traité de Maastricht, qui marque la fondation de l'Union européenne, a-t-il été signé ?",
-    "options": ["1992", "1957", "2002", "1989"],
-    "answer": "1992"
-  },
-  {
-    "id": 89,
-    "categorie": "Système institutionnel et politique",
-    "question": "Quel traité concerne la construction de l'Union européenne ?",
-    "options": ["Le Traité de Rome", "Le Traité de Versailles", "Le Traité de Paris", "Le Traité de Tordesillas"],
-    "answer": "Le Traité de Rome"
-  },
-  {
-    "id": 90,
-    "categorie": "Système institutionnel et politique",
-    "question": "Quel État a quitté l'Union Européenne en 2020 ?",
-    "options": ["Le Royaume-Uni", "La Suisse", "La Norvège", "La Grèce"],
-    "answer": "Le Royaume-Uni"
-  },
-  {
-    "id": 91,
-    "categorie": "Système institutionnel et politique",
-    "question": "Quelle est la devise de l'Union européenne ?",
-    "options": ["Unie dans la diversité", "Liberté, Égalité, Fraternité", "La paix pour tous", "L'union fait la force"],
-    "answer": "Unie dans la diversité"
-  },
-  {
-    "id": 92,
-    "categorie": "Système institutionnel et politique",
-    "question": "Quel est l'hymne de l'Union Européenne ?",
-    "options": ["L'Ode à la joie", "La Marseillaise", "God Save the King", "L'Internationale"],
-    "answer": "L'Ode à la joie"
-  },
-  {
-    "id": 93,
-    "categorie": "Système institutionnel et politique",
-    "question": "De quoi est composé le drapeau européen ?",
-    "options": ["12 étoiles dorées en cercle sur fond bleu", "15 étoiles blanches sur fond rouge", "27 étoiles dorées sur fond bleu", "Une colombe sur fond bleu"],
-    "answer": "12 étoiles dorées en cercle sur fond bleu"
-  },
-  {
-    "id": 94,
-    "categorie": "Système institutionnel et politique",
-    "question": "Qui élit les députés européens ?",
-    "options": ["Les citoyens des États membres au suffrage universel direct", "Les parlements nationaux", "Les gouvernements", "La Commission européenne"],
-    "answer": "Les citoyens des États membres au suffrage universel direct"
-  },
-  {
-    "id": 95,
-    "categorie": "Système institutionnel et politique",
-    "question": "Où est le siège du Parlement européen ?",
-    "options": ["Strasbourg", "Paris", "Bruxelles", "Berlin"],
-    "answer": "Strasbourg"
-  },
-  {
-    "id": 96,
-    "categorie": "Droits et devoirs",
-    "question": "À quoi sert le droit de grève ?",
-    "options": ["À défendre les intérêts professionnels des salariés", "À partir en vacances plus tôt", "À ne pas payer d'impôts", "À manifester contre l'Europe"],
-    "answer": "À défendre les intérêts professionnels des salariés"
-  },
-  {
-    "id": 97,
-    "categorie": "Droits et devoirs",
-    "question": "Au nom de quoi l'État justifie-t-il la restriction des droits ?",
-    "options": ["Pour garantir l'ordre public et la sécurité de tous", "Pour économiser de l'argent", "Pour interdire l'opposition politique", "Pour favoriser les plus riches"],
-    "answer": "Pour garantir l'ordre public et la sécurité de tous"
-  },
-  {
-    "id": 98,
-    "categorie": "Droits et devoirs",
-    "question": "Laquelle de ces citations est inscrite dans la Déclaration des Droits de l'Homme et du Citoyen de 1789 ?",
-    "options": ["Les hommes naissent et demeurent libres et égaux en droits", "L'État c'est moi", "Un pour tous, tous pour un", "La République est une et indivisible"],
-    "answer": "Les hommes naissent et demeurent libres et égaux en droits"
-  },
-  {
-    "id": 99,
-    "categorie": "Droits et devoirs",
-    "question": "L'article 4 de la Déclaration des droits de l'homme affirme que \"la liberté consiste à pouvoir faire tout ce qui ne nuit pas à autrui\". Qu'est-ce que cela signifie ?",
-    "options": ["Ma liberté s'arrête là où commence celle des autres", "Je peux tout faire sans limite", "La liberté est une illusion", "Seuls les citoyens ont des droits"],
-    "answer": "Ma liberté s'arrête là où commence celle des autres"
-  },
-  {
-    "id": 100,
-    "categorie": "Droits et devoirs",
-    "question": "Que dit l'article 1er de la Constitution française ?",
-    "options": ["La France est une République indivisible, laïque, démocratique et sociale", "La France est une monarchie constitutionnelle", "La langue de la République est le français", "L'emblème national est le drapeau tricolore"],
-    "answer": "La France est une République indivisible, laïque, démocratique et sociale"
-  },
-  {
-    "id": 101,
-    "categorie": "Droits et devoirs",
-    "question": "Que garantit la liberté de la presse ?",
-    "options": ["Le droit de publier et diffuser librement des idées et opinions", "La gratuité des journaux", "Le monopole de l'État sur l'information", "Le droit de diffamer anonymement"],
-    "answer": "Le droit de publier et diffuser librement des idées et opinions"
-  },
-  {
-    "id": 102,
-    "categorie": "Droits et devoirs",
-    "question": "Que permet la liberté de circulation ?",
-    "options": ["De se déplacer librement à l'intérieur du territoire national", "De conduire sans permis", "De voyager gratuitement en train", "De franchir les frontières sans contrôle jamais"],
-    "answer": "De se déplacer librement à l'intérieur du territoire national"
-  },
-  {
-    "id": 103,
-    "categorie": "Droits et devoirs",
-    "question": "Que signifie être citoyen d'un État ?",
-    "options": ["Bénéficier de droits civils et politiques et être soumis à des devoirs", "Y habiter depuis plus de 5 ans", "Payer des impôts sans droit de vote", "Être né dans cet État obligatoirement"],
-    "answer": "Bénéficier de droits civils et politiques et être soumis à des devoirs"
-  },
-  {
-    "id": 104,
-    "categorie": "Droits et devoirs",
-    "question": "Que sont les droits fondamentaux ?",
-    "options": ["Les droits essentiels inhérents à tout être humain", "Les droits des travailleurs uniquement", "Les droits accordés uniquement aux présidents", "Les droits de propriété sur des biens"],
-    "answer": "Les droits essentiels inhérents à tout être humain"
-  },
-  {
-    "id": 105,
-    "categorie": "Droits et devoirs",
-    "question": "Quel droit protège une personne contre une arrestation arbitraire ?",
-    "options": ["La liberté individuelle", "La liberté syndicale", "Le droit au logement", "La liberté de culte"],
-    "answer": "La liberté individuelle"
-  },
-  {
-    "id": 106,
-    "categorie": "Droits et devoirs",
-    "question": "Quel est le texte fondateur établissant les droits et les devoirs de chaque citoyen ?",
-    "options": ["La Déclaration des Droits de l'Homme et du Citoyen", "Le Code Civil", "La Charte de l'environnement", "Le Code Pénal"],
-    "answer": "La Déclaration des Droits de l'Homme et du Citoyen"
-  },
-  {
-    "id": 107,
-    "categorie": "Droits et devoirs",
-    "question": "Quel texte affirme que tous les hommes naissent libres et égaux en droits ?",
-    "options": ["La Déclaration des Droits de l'Homme et du Citoyen", "L'Hymne national", "La Constitution de 1958", "Le Traité de Rome"],
-    "answer": "La Déclaration des Droits de l'Homme et du Citoyen"
-  },
-  {
-    "id": 108,
-    "categorie": "Droits et devoirs",
-    "question": "Quelle situation est une atteinte à la dignité humaine ?",
-    "options": ["L'esclavage et la torture", "Payer des impôts", "Travailler 35 heures", "Passer le permis de conduire"],
-    "answer": "L'esclavage et la torture"
-  },
-  {
-    "id": 109,
-    "categorie": "Droits et devoirs",
-    "question": "Qu'est-ce que la liberté d'expression ?",
-    "options": ["Le droit d'exprimer librement ses opinions dans le respect des autres", "Le droit d'insulter qui on veut", "L'interdiction de critiquer le gouvernement", "Le droit de parler fort dans la rue"],
-    "answer": "Le droit d'exprimer librement ses opinions dans le respect des autres"
-  },
-  {
-    "id": 110,
-    "categorie": "Droits et devoirs",
-    "question": "Suite à une interpellation par la police, il est possible de :",
-    "options": ["Garder le silence et demander un avocat", "S'enfuir", "Menacer le policier", "Refuser de décliner son identité"],
-    "answer": "Garder le silence et demander un avocat"
-  },
-  {
-    "id": 111,
-    "categorie": "Droits et devoirs",
-    "question": "Tous les citoyens français ont-ils une religion ?",
-    "options": ["Non, chacun est libre d'avoir une religion ou de n'en avoir aucune", "Oui, la religion catholique est obligatoire", "Oui, il faut déclarer sa religion à la mairie", "Non, la religion est interdite en France"],
-    "answer": "Non, chacun est libre d'avoir une religion ou de n'en avoir aucune"
-  },
-  {
-    "id": 112,
-    "categorie": "Droits et devoirs",
-    "question": "À quel âge est la majorité numérique en France ?",
-    "options": ["15 ans", "18 ans", "13 ans", "21 ans"],
-    "answer": "15 ans"
-  },
-  {
-    "id": 113,
-    "categorie": "Droits et devoirs",
-    "question": "Dans lequel de ces endroits est-on autorisé à fumer ?",
-    "options": ["Dans la rue", "Dans un restaurant fermé", "Dans une école", "Dans un hôpital"],
-    "answer": "Dans la rue"
-  },
-  {
-    "id": 114,
-    "categorie": "Droits et devoirs",
-    "question": "En France, la conduite sans permis d'une moto est :",
-    "options": ["Un délit pénalement sanctionné", "Autorisée sur les petites routes", "Autorisée si on porte un casque", "Tolérée le dimanche"],
-    "answer": "Un délit pénalement sanctionné"
-  },
-  {
-    "id": 115,
-    "categorie": "Droits et devoirs",
-    "question": "En quoi consiste le devoir de solidarité ?",
-    "options": ["Payer ses impôts et cotisations sociales pour aider la collectivité", "Prêter de l'argent à ses voisins", "Faire des dons aux églises", "Accueillir des sans-abris chez soi"],
-    "answer": "Payer ses impôts et cotisations sociales pour aider la collectivité"
-  },
-  {
-    "id": 116,
-    "categorie": "Droits et devoirs",
-    "question": "Est-ce légal d'être marié à plusieurs personnes en même temps ?",
-    "options": ["Non, la polygamie est interdite en France", "Oui, si tout le monde est d'accord", "Oui, pour les hommes uniquement", "Non, sauf avec une dérogation"],
-    "answer": "Non, la polygamie est interdite en France"
-  },
-  {
-    "id": 117,
-    "categorie": "Droits et devoirs",
-    "question": "Est-ce obligatoire de déclarer ses impôts chaque année en France ?",
-    "options": ["Oui, même si on ne paie pas d'impôts", "Non, seulement si on gagne beaucoup", "Non, l'employeur s'en charge", "Oui, mais uniquement pour les propriétaires"],
-    "answer": "Oui, même si on ne paie pas d'impôts"
-  },
-  {
-    "id": 118,
-    "categorie": "Droits et devoirs",
-    "question": "Est-il obligatoire de porter secours à une personne en danger ?",
-    "options": ["Oui, la non-assistance à personne en danger est un délit", "Non, c'est le travail des pompiers", "Seulement si on est médecin", "Non, c'est au choix"],
-    "answer": "Oui, la non-assistance à personne en danger est un délit"
-  },
-  {
-    "id": 119,
-    "categorie": "Droits et devoirs",
-    "question": "Être juré d'assises est :",
-    "options": ["Un devoir civique", "Une profession rémunérée", "Facultatif", "Réservé aux avocats"],
-    "answer": "Un devoir civique"
-  },
-  {
-    "id": 120,
-    "categorie": "Droits et devoirs",
-    "question": "La vente d'alcool en France est interdite aux personnes de moins de :",
-    "options": ["18 ans", "16 ans", "21 ans", "14 ans"],
-    "answer": "18 ans"
-  },
-  {
-    "id": 121,
-    "categorie": "Droits et devoirs",
-    "question": "Le non-respect du code de la route est :",
-    "options": ["Une infraction punie par la loi", "Toléré la nuit", "Autorisé pour les vélos", "Sans gravité"],
-    "answer": "Une infraction punie par la loi"
-  },
-  {
-    "id": 122,
-    "categorie": "Droits et devoirs",
-    "question": "Lequel de ces crimes ou délits peut entrainer la privation des droits civils et politiques par un juge ?",
-    "options": ["Un crime ou délit grave (fraude, corruption, etc.)", "Une amende pour stationnement", "Un excès de vitesse mineur", "Ne pas voter aux élections"],
-    "answer": "Un crime ou délit grave (fraude, corruption, etc.)"
-  },
-  {
-    "id": 123,
-    "categorie": "Droits et devoirs",
-    "question": "Pour obtenir une carte d'identité, il faut :",
-    "options": ["Faire la demande à la mairie avec les justificatifs nécessaires", "Payer une taxe à la préfecture", "Avoir un travail", "Avoir 18 ans minimum"],
-    "answer": "Faire la demande à la mairie avec les justificatifs nécessaires"
-  },
-  {
-    "id": 124,
-    "categorie": "Droits et devoirs",
-    "question": "Pour quel motif peut-on limiter la liberté d'expression ?",
-    "options": ["En cas de diffamation, injures ou incitation à la haine raciale", "Si on critique le gouvernement", "Si on dit une bêtise", "Si on n'est pas d'accord avec la majorité"],
-    "answer": "En cas de diffamation, injures ou incitation à la haine raciale"
-  },
-  {
-    "id": 125,
-    "categorie": "Droits et devoirs",
-    "question": "Que doit faire un citoyen s'il est appelé à être juré dans un procès d'assises ?",
-    "options": ["Il doit y participer (sauf motif légitime d'exemption)", "Il peut refuser sans raison", "Il doit payer un remplaçant", "Il n'y va que si c'est près de chez lui"],
-    "answer": "Il doit y participer (sauf motif légitime d'exemption)"
-  },
-  {
-    "id": 126,
-    "categorie": "Droits et devoirs",
-    "question": "Quel est l'âge de la majorité civile en France ?",
-    "options": ["18 ans", "21 ans", "16 ans", "25 ans"],
-    "answer": "18 ans"
-  },
-  {
-    "id": 127,
-    "categorie": "Droits et devoirs",
-    "question": "Quel est l'un des devoirs principaux d'un citoyen français ?",
-    "options": ["Respecter les lois de la République", "Être propriétaire de son logement", "Avoir une voiture", "Voyager en Europe"],
-    "answer": "Respecter les lois de la République"
-  },
-  {
-    "id": 128,
-    "categorie": "Droits et devoirs",
-    "question": "Quelle est l'infraction la plus grave ?",
-    "options": ["Le crime (homicide, viol, braquage...)", "La contravention", "Le délit", "L'incivilité"],
-    "answer": "Le crime (homicide, viol, braquage...)"
-  },
-  {
-    "id": 129,
-    "categorie": "Droits et devoirs",
-    "question": "Qu'est-ce que la citoyenneté numérique ?",
-    "options": ["L'utilisation responsable et respectueuse d'Internet et des réseaux sociaux", "Le droit d'avoir un ordinateur gratuit", "Le vote par internet obligatoire", "L'obligation d'avoir un compte Facebook"],
-    "answer": "L'utilisation responsable et respectueuse d'Internet et des réseaux sociaux"
-  },
-  {
-    "id": 130,
-    "categorie": "Droits et devoirs",
-    "question": "Qu'est-ce que le devoir de mémoire ?",
-    "options": ["L'obligation morale de se souvenir des événements tragiques du passé", "L'obligation d'apprendre l'histoire par cœur", "Le fait de célébrer les anniversaires des présidents", "Une taxe sur les monuments historiques"],
-    "answer": "L'obligation morale de se souvenir des événements tragiques du passé"
-  },
-  {
-    "id": 131,
-    "categorie": "Droits et devoirs",
-    "question": "Qui peut être appelé à faire partie d'un jury d'assises en France ?",
-    "options": ["Les citoyens français tirés au sort sur les listes électorales", "Uniquement les avocats", "Les étrangers résidents", "Les policiers à la retraite"],
-    "answer": "Les citoyens français tirés au sort sur les listes électorales"
-  },
-  {
-    "id": 132,
-    "categorie": "Droits et devoirs",
-    "question": "Une personne est privée de ses droits civils et politiques pendant 5 ans suite à une condamnation.",
-    "options": ["Elle ne peut ni voter ni être élue pendant 5 ans", "Elle doit quitter le pays pendant 5 ans", "Elle ne paie plus d'impôts pendant 5 ans", "Elle ne peut pas travailler pendant 5 ans"],
-    "answer": "Elle ne peut ni voter ni être élue pendant 5 ans"
-  },
-  {
-    "id": 133,
-    "categorie": "Droits et devoirs",
-    "question": "Parmi ces propositions laquelle est correcte ? Pendant 5 ans,...",
-    "options": ["Elle ne pourra pas s'inscrire sur les listes électorales", "Elle ne pourra pas se marier", "Elle ne pourra pas conduire", "Elle ne pourra pas aller à l'hôpital"],
-    "answer": "Elle ne pourra pas s'inscrire sur les listes électorales"
-  },
-  {
-    "id": 134,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Parmi ces textes, lequel a été adopté sous Napoléon ler ?",
-    "options": ["Le Code civil", "La Déclaration des droits de l'homme", "La loi sur la laïcité", "La charte de l'environnement"],
-    "answer": "Le Code civil"
-  },
-  {
-    "id": 135,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Qui a été président de la Ve République ?",
-    "options": ["Charles de Gaulle", "Napoléon Bonaparte", "Louis XIV", "Jean Jaurès"],
-    "answer": "Charles de Gaulle"
-  },
-  {
-    "id": 136,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Quel est l'objectif des lois scolaires de la Ille République ?",
-    "options": ["Rendre l'école primaire gratuite, laïque et obligatoire", "Faire payer l'école", "Interdire l'enseignement aux filles", "Donner le contrôle de l'école à l'Église"],
-    "answer": "Rendre l'école primaire gratuite, laïque et obligatoire"
-  },
-  {
-    "id": 137,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Que signifie la date du 14 juillet pour les Français ?",
-    "options": ["La fête nationale, commémorant la prise de la Bastille", "La fin de la 1ère guerre mondiale", "La naissance de Marianne", "L'abolition de l'esclavage"],
-    "answer": "La fête nationale, commémorant la prise de la Bastille"
-  },
-  {
-    "id": 138,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Pourquoi l'année 1958 est importante pour la France ?",
-    "options": ["C'est l'adoption de la Constitution de la Ve République", "C'est la fin de l'Empire de Napoléon", "C'est l'année de la séparation des églises et de l'État", "C'est l'année de l'abolition de la peine de mort"],
-    "answer": "C'est l'adoption de la Constitution de la Ve République"
-  },
-  {
-    "id": 139,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Lequel de ces pays est un pays fondateur de l'Union Européenne ?",
-    "options": ["La France", "Le Royaume-Uni", "L'Espagne", "La Pologne"],
-    "answer": "La France"
-  },
-  {
-    "id": 140,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Simone Veil est une figure importante de l'histoire française. Elle a notamment :",
-    "options": ["Fait adopter la loi autorisant l'IVG (avortement)", "Créé la sécurité sociale", "Peint la Joconde", "Découvert la radioactivité"],
-    "answer": "Fait adopter la loi autorisant l'IVG (avortement)"
-  },
-  {
-    "id": 141,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Dans quelle région est située une partie des plages du débarquement ayant permis d'engager la libération de la France ?",
-    "options": ["En Normandie", "En Bretagne", "En Provence", "En Nouvelle-Aquitaine"],
-    "answer": "En Normandie"
-  },
-  {
-    "id": 142,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Dans quelle ville les rois de France étaient-ils couronnés ?",
-    "options": ["Reims", "Paris", "Versailles", "Orléans"],
-    "answer": "Reims"
-  },
-  {
-    "id": 143,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Quel roi de France a été guillotiné pendant la Révolution française ?",
-    "options": ["Louis XVI", "Henri IV", "Louis XIV", "Charles X"],
-    "answer": "Louis XVI"
-  },
-  {
-    "id": 144,
-    "categorie": "Histoire, géographie et culture",
-    "question": "En quelle année a débuté la Révolution française ?",
-    "options": ["1789", "1804", "1905", "1958"],
-    "answer": "1789"
-  },
-  {
-    "id": 145,
-    "categorie": "Histoire, géographie et culture",
-    "question": "En quelle année Napoléon ler est-il devenu empereur ?",
-    "options": ["1804", "1789", "1848", "1914"],
-    "answer": "1804"
-  },
-  {
-    "id": 146,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Lequel de ces personnages a un lien avec la République française ?",
-    "options": ["Marianne", "Jeanne d'Arc", "Vercingétorix", "Clovis"],
-    "answer": "Marianne"
-  },
-  {
-    "id": 147,
-    "categorie": "Histoire, géographie et culture",
-    "question": "De quand date l'appel à la résistance du général de Gaulle ?",
-    "options": ["18 juin 1940", "11 novembre 1918", "8 mai 1945", "14 juillet 1789"],
-    "answer": "18 juin 1940"
-  },
-  {
-    "id": 148,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Qu'est-ce que la Shoah ?",
-    "options": ["L'extermination des Juifs par l'Allemagne nazie", "Une bataille de la Révolution", "Un mouvement artistique du XXe siècle", "Une crise économique en France"],
-    "answer": "L'extermination des Juifs par l'Allemagne nazie"
-  },
-  {
-    "id": 149,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Quel pays a été une colonie française ?",
-    "options": ["L'Algérie", "Le Brésil", "Le Japon", "L'Afrique du Sud"],
-    "answer": "L'Algérie"
-  },
-  {
-    "id": 150,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Qui a rendu l'école gratuite, laïque et obligatoire ?",
-    "options": ["Jules Ferry", "Victor Hugo", "Charlemagne", "Léon Blum"],
-    "answer": "Jules Ferry"
-  },
-  {
-    "id": 151,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Depuis quand les Français élisent-ils le président de la République au suffrage universel direct ?",
-    "options": ["1962", "1789", "1905", "2000"],
-    "answer": "1962"
-  },
-  {
-    "id": 152,
-    "categorie": "Histoire, géographie et culture",
-    "question": "En quelle année l'Union européenne a-t-elle été fondée ?",
-    "options": ["1992 (Traité de Maastricht)", "1945", "1957", "2002"],
-    "answer": "1992 (Traité de Maastricht)"
-  },
-  {
-    "id": 153,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Quand a eu lieu la Seconde guerre mondiale ?",
-    "options": ["De 1939 à 1945", "De 1914 à 1918", "De 1870 à 1871", "De 1954 à 1962"],
-    "answer": "De 1939 à 1945"
-  },
-  {
-    "id": 154,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Quand a eu lieu la Première guerre mondiale ?",
-    "options": ["De 1914 à 1918", "De 1939 à 1945", "De 1870 à 1871", "De 1804 à 1815"],
-    "answer": "De 1914 à 1918"
-  },
-  {
-    "id": 155,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Sous quel président a été abolie la peine de mort en France ?",
-    "options": ["François Mitterrand", "Charles de Gaulle", "Jacques Chirac", "Georges Pompidou"],
-    "answer": "François Mitterrand"
-  },
-  {
-    "id": 156,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Que célèbre-t-on le 8 mai ?",
-    "options": ["La fin de la Seconde Guerre mondiale en Europe (1945)", "La prise de la Bastille", "L'armistice de 1918", "La fête du Travail"],
-    "answer": "La fin de la Seconde Guerre mondiale en Europe (1945)"
-  },
-  {
-    "id": 157,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Quelle est la première étape de la construction européenne en 1951 ?",
-    "options": ["La CECA (Communauté européenne du charbon et de l'acier)", "La création de l'euro", "Le traité de Lisbonne", "L'entrée du Royaume-Uni"],
-    "answer": "La CECA (Communauté européenne du charbon et de l'acier)"
-  },
-  {
-    "id": 158,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Qui était une figure de la Résistance française pendant la Seconde Guerre mondiale ?",
-    "options": ["Jean Moulin", "Maréchal Pétain", "Robespierre", "Napoléon III"],
-    "answer": "Jean Moulin"
-  },
-  {
-    "id": 159,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Le 11 novembre est un jour férié. À quoi correspond cette date ?",
-    "options": ["L'armistice de la Première Guerre mondiale (1918)", "La fin de la Seconde Guerre mondiale", "La fête nationale", "La fête du travail"],
-    "answer": "L'armistice de la Première Guerre mondiale (1918)"
-  },
-  {
-    "id": 160,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Depuis quand l'esclavage a-t-il été aboli en France ?",
-    "options": ["1848", "1789", "1905", "1945"],
-    "answer": "1848"
-  },
-  {
-    "id": 161,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Qui a aboli l'esclavage en France ?",
-    "options": ["Victor Schœlcher (en 1848)", "Napoléon", "Louis XIV", "Charles de Gaulle"],
-    "answer": "Victor Schœlcher (en 1848)"
-  },
-  {
-    "id": 162,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Depuis quelle année l'école publique est-elle gratuite ?",
-    "options": ["1881 (lois Jules Ferry)", "1905", "1945", "1958"],
-    "answer": "1881 (lois Jules Ferry)"
-  },
-  {
-    "id": 163,
-    "categorie": "Histoire, géographie et culture",
-    "question": "En 1944, qu'est-ce qui a changé pour les femmes ?",
-    "options": ["Elles ont obtenu le droit de vote", "Elles ont pu travailler sans l'accord du mari", "Elles ont pu ouvrir un compte en banque seules", "L'école est devenue obligatoire pour elles"],
-    "answer": "Elles ont obtenu le droit de vote"
-  },
-  {
-    "id": 164,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Quelle organisation a été créée en 1945 après la Seconde Guerre mondiale ?",
-    "options": ["L'ONU (Organisation des Nations Unies)", "L'Union Européenne", "La SDN (Société des Nations)", "L'OTAN"],
-    "answer": "L'ONU (Organisation des Nations Unies)"
-  },
-  {
-    "id": 165,
-    "categorie": "Histoire, géographie et culture",
-    "question": "En quelle année l'euro est-il devenu la monnaie officielle de la France ?",
-    "options": ["2002", "1999", "1992", "2010"],
-    "answer": "2002"
-  },
-  {
-    "id": 166,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Lors de la seconde guerre mondiale, à quelle date la ville de Paris a-t-elle été libérée ?",
-    "options": ["Le 25 août 1944", "Le 18 juin 1940", "Le 6 juin 1944", "Le 8 mai 1945"],
-    "answer": "Le 25 août 1944"
-  },
-  {
-    "id": 167,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Quel était le principal port français impliqué dans la traite négrière au XVIIIe siècle ?",
-    "options": ["Nantes", "Marseille", "Le Havre", "Brest"],
-    "answer": "Nantes"
-  },
-  {
-    "id": 168,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Quel célèbre philosophe des Lumières a dénoncé l'esclavage ?",
-    "options": ["Montesquieu (et Voltaire, Rousseau)", "René Descartes", "Blaise Pascal", "Jean-Paul Sartre"],
-    "answer": "Montesquieu (et Voltaire, Rousseau)"
-  },
-  {
-    "id": 169,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Quelle œuvre a été écrite par Victor Hugo ?",
-    "options": ["Les Misérables", "Le Petit Prince", "L'Étranger", "Madame Bovary"],
-    "answer": "Les Misérables"
-  },
-  {
-    "id": 170,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Quel peintre est français ?",
-    "options": ["Claude Monet", "Léonard de Vinci", "Pablo Picasso", "Vincent van Gogh"],
-    "answer": "Claude Monet"
-  },
-  {
-    "id": 171,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Quel plat est une spécialité de la cuisine française ?",
-    "options": ["Le bœuf bourguignon", "La paella", "Les spaghettis à la carbonara", "Le couscous"],
-    "answer": "Le bœuf bourguignon"
-  },
-  {
-    "id": 172,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Qui était Marie Curie ?",
-    "options": ["Une physicienne et chimiste qui a étudié la radioactivité", "Une reine de France", "Une actrice de cinéma", "La première femme astronaute"],
-    "answer": "Une physicienne et chimiste qui a étudié la radioactivité"
-  },
-  {
-    "id": 173,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Qui a peint \"La liberté guidant le peuple\" ?",
-    "options": ["Eugène Delacroix", "Auguste Renoir", "Paul Cézanne", "Claude Monet"],
-    "answer": "Eugène Delacroix"
-  },
-  {
-    "id": 174,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Dans quel grand musée parisien est exposée la Joconde ?",
-    "options": ["Le Musée du Louvre", "Le Musée d'Orsay", "Le Centre Pompidou", "Le Grand Palais"],
-    "answer": "Le Musée du Louvre"
-  },
-  {
-    "id": 175,
-    "categorie": "Histoire, géographie et culture",
-    "question": "Quel château célèbre se trouve près de Paris et symbolise le pouvoir royal de Louis XIV ?",
-    "options": ["Le château de Versailles", "Le château de Chambord", "Le château de Chenonceau", "Le palais des Papes"],
-    "answer": "Le château de Versailles"
-  },
-  {
-    "id": 176,
-    "categorie": "Vivre dans la société française",
-    "question": "Où faut-il déclarer la naissance d'un enfant ?",
-    "options": ["À la mairie", "À la préfecture", "Au commissariat", "À l'hôpital uniquement"],
-    "answer": "À la mairie"
-  },
-  {
-    "id": 177,
-    "categorie": "Vivre dans la société française",
-    "question": "Quelle action peut réaliser le locataire d'un logement sans l'autorisation du propriétaire ?",
-    "options": ["Peindre les murs ou poser des tapisseries", "Casser un mur porteur", "Sous-louer l'appartement", "Transformer l'appartement en commerce"],
-    "answer": "Peindre les murs ou poser des tapisseries"
-  },
-  {
-    "id": 178,
-    "categorie": "Vivre dans la société française",
-    "question": "Quel mariage est reconnu légalement ?",
-    "options": ["Le mariage civil à la mairie", "Le mariage religieux seul", "Le concubinage", "Le PACS (c'est un contrat, pas un mariage)"],
-    "answer": "Le mariage civil à la mairie"
-  },
-  {
-    "id": 179,
-    "categorie": "Vivre dans la société française",
-    "question": "Le stationnement sur une place réservée aux personnes handicapées :",
-    "options": ["Est interdit sauf si on possède la carte de stationnement pour handicapé", "Est autorisé si on ne reste que 5 minutes", "Est autorisé le dimanche", "Est autorisé aux femmes enceintes"],
-    "answer": "Est interdit sauf si on possède la carte de stationnement pour handicapé"
-  },
-  {
-    "id": 180,
-    "categorie": "Vivre dans la société française",
-    "question": "Quel numéro d'urgence permet d'appeler la police ?",
-    "options": ["Le 17", "Le 15", "Le 18", "Le 112"],
-    "answer": "Le 17"
-  },
-  {
-    "id": 181,
-    "categorie": "Vivre dans la société française",
-    "question": "Quel numéro d'urgence permet d'appeler le SAMU ?",
-    "options": ["Le 15", "Le 17", "Le 18", "Le 114"],
-    "answer": "Le 15"
-  },
-  {
-    "id": 182,
-    "categorie": "Vivre dans la société française",
-    "question": "À quoi sert la carte Vitale ?",
-    "options": ["À justifier de ses droits à l'Assurance maladie pour le remboursement des soins", "À payer chez le médecin", "À prouver son identité", "À s'inscrire à l'école"],
-    "answer": "À justifier de ses droits à l'Assurance maladie pour le remboursement des soins"
-  },
-  {
-    "id": 183,
-    "categorie": "Vivre dans la société française",
-    "question": "L'avortement est-il possible en France ?",
-    "options": ["Oui, c'est un droit (l'IVG)", "Non, c'est formellement interdit", "Oui, mais seulement avec l'accord du mari", "Seulement si la vie de la mère est en danger"],
-    "answer": "Oui, c'est un droit (l'IVG)"
-  },
-  {
-    "id": 184,
-    "categorie": "Vivre dans la société française",
-    "question": "Travailler sans être déclaré est :",
-    "options": ["Illégal (c'est du travail dissimulé ou \"au noir\")", "Autorisé pour les étudiants", "Légal si l'employeur est d'accord", "Autorisé pour moins de 10 heures par semaine"],
-    "answer": "Illégal (c'est du travail dissimulé ou \"au noir\")"
-  },
-  {
-    "id": 185,
-    "categorie": "Vivre dans la société française",
-    "question": "Qu'est-ce que le SMIC ?",
-    "options": ["Le Salaire Minimum Interprofessionnel de Croissance", "Le Syndicat Médical Indépendant", "Une aide pour payer le loyer", "Une taxe sur les salaires"],
-    "answer": "Le Salaire Minimum Interprofessionnel de Croissance"
-  },
-  {
-    "id": 186,
-    "categorie": "Vivre dans la société française",
-    "question": "Quelle est la durée légale du temps de travail par semaine ?",
-    "options": ["35 heures", "39 heures", "40 heures", "42 heures"],
-    "answer": "35 heures"
-  },
-  {
-    "id": 187,
-    "categorie": "Vivre dans la société française",
-    "question": "Qui a le droit de se syndiquer ?",
-    "options": ["Tous les travailleurs", "Uniquement les fonctionnaires", "Uniquement les ouvriers", "Personne, c'est interdit"],
-    "answer": "Tous les travailleurs"
-  },
-  {
-    "id": 188,
-    "categorie": "Vivre dans la société française",
-    "question": "Est-il possible de licencier une femme enceinte ou en congé maternité, en raison de sa grossesse ?",
-    "options": ["Non, la loi la protège contre le licenciement", "Oui, si elle ne peut plus faire le même travail", "Oui, si l'entreprise a des difficultés financières", "Non, sauf si le médecin du travail est d'accord"],
-    "answer": "Non, la loi la protège contre le licenciement"
-  },
-  {
-    "id": 189,
-    "categorie": "Vivre dans la société française",
-    "question": "L'instruction des enfants est obligatoire de :",
-    "options": ["3 à 16 ans", "6 à 16 ans", "3 à 18 ans", "6 à 18 ans"],
-    "answer": "3 à 16 ans"
-  },
-  {
-    "id": 190,
-    "categorie": "Vivre dans la société française",
-    "question": "Est-ce possible de punir physiquement ses enfants ?",
-    "options": ["Non, les violences éducatives ordinaires sont interdites par la loi", "Oui, si c'est pour l'éduquer", "Oui, avec modération", "Uniquement après l'âge de 7 ans"],
-    "answer": "Non, les violences éducatives ordinaires sont interdites par la loi"
-  }
+  {"id": 1, "categorie": "Principes et valeurs de la République", "question": "Complétez les paroles de la Marseillaise \"Allons enfants de la patrie...\"", "options": ["Le jour de gloire est arrivé", "L'étendard sanglant est levé", "Marchons, marchons", "Formez vos bataillons"], "answer": "Le jour de gloire est arrivé", "detailAnswer": "Écrite par Rouget de Lisle en 1792, la Marseillaise est l'hymne national de la France."},
+  {"id": 2, "categorie": "Principes et valeurs de la République", "question": "Dans le cadre d'un entretien d'embauche, que peut-on demander au candidat ?", "options": ["Ses diplômes et expériences professionnelles", "Sa religion", "Ses opinions politiques", "Ses origines ethniques"], "answer": "Ses diplômes et expériences professionnelles", "detailAnswer": "Le Code du travail interdit toute question discriminatoire (religion, origine, politique)."},
+  {"id": 3, "categorie": "Principes et valeurs de la République", "question": "Déclarer ses revenus aux services fiscaux est :", "options": ["Une obligation légale", "Facultatif", "Réservé aux citoyens français", "Seulement pour les fonctionnaires"], "answer": "Une obligation légale", "detailAnswer": "Chaque résident en France doit déclarer ses revenus annuellement pour participer à la solidarité nationale."},
+  {"id": 4, "categorie": "Principes et valeurs de la République", "question": "En France, les impôts permettent de financer les dépenses publiques. Quelle proposition est correcte ?", "options": ["Ils financent les écoles, hôpitaux et infrastructures", "Ils sont reversés à l'Union Européenne uniquement", "Ils servent à payer les campagnes électorales", "Ils ne financent que l'armée"], "answer": "Ils financent les écoles, hôpitaux et infrastructures", "detailAnswer": "L'impôt est le principal moyen de financement des services publics essentiels (santé, éducation, routes)."},
+  {"id": 5, "categorie": "Principes et valeurs de la République", "question": "La liberté d'association est :", "options": ["Garantie par la loi", "Interdite en France", "Soumise à autorisation du préfet", "Payante"], "answer": "Garantie par la loi", "detailAnswer": "La loi de 1901 garantit à tous le droit de créer ou rejoindre une association librement."},
+  {"id": 6, "categorie": "Principes et valeurs de la République", "question": "La liberté d'expression sur les réseaux sociaux en France est :", "options": ["Limitée par la loi (diffamation, racisme interdits)", "Totale et sans aucune limite", "Interdite", "Réservée aux majeurs"], "answer": "Limitée par la loi (diffamation, racisme interdits)", "detailAnswer": "La liberté d'expression n'autorise pas l'incitation à la haine, le cyberharcèlement ou la diffamation."},
+  {"id": 7, "categorie": "Principes et valeurs de la République", "question": "Lequel de ces prénoms évoque un symbole de la République ?", "options": ["Marianne", "Jeanne", "Marie", "Joséphine"], "answer": "Marianne", "detailAnswer": "Marianne est la figure allégorique incarnant la République française et ses valeurs."},
+  {"id": 8, "categorie": "Principes et valeurs de la République", "question": "Lequel de ces symboles représente la République française ?", "options": ["Le drapeau tricolore", "La fleur de lys", "L'aigle impérial", "La croix celtique"], "answer": "Le drapeau tricolore", "detailAnswer": "Le drapeau bleu, blanc, rouge est l'emblème national officiel défini par la Constitution."},
+  {"id": 9, "categorie": "Principes et valeurs de la République", "question": "Où peut-on voir la devise de la République ?", "options": ["Sur le fronton des mairies", "Uniquement à l'Assemblée Nationale", "Sur les billets de banque", "Dans les églises"], "answer": "Sur le fronton des mairies", "detailAnswer": "La devise est inscrite sur la plupart des édifices publics, comme les mairies et les écoles."},
+  {"id": 10, "categorie": "Principes et valeurs de la République", "question": "Lesquels sont des symboles officiels de la République française ?", "options": ["Le drapeau bleu-blanc-rouge et la Marseillaise", "Le coq et le béret", "La baguette et le camembert", "La Tour Eiffel et le Louvre"], "answer": "Le drapeau bleu-blanc-rouge et la Marseillaise", "detailAnswer": "Ce sont les deux symboles explicitement mentionnés dans l'article 2 de la Constitution."},
+  {"id": 11, "categorie": "Principes et valeurs de la République", "question": "Peut-on brûler publiquement un drapeau français ?", "options": ["Non, c'est un délit puni par la loi", "Oui, au nom de la liberté d'expression", "Oui, mais seulement le 14 juillet", "Non, sauf autorisation de la mairie"], "answer": "Non, c'est un délit puni par la loi", "detailAnswer": "L'outrage au drapeau tricolore est pénalement répréhensible en France."},
+  {"id": 12, "categorie": "Principes et valeurs de la République", "question": "Quand la sécurité sociale a-t-elle été établie en France ?", "options": ["1945", "1789", "1905", "1958"], "answer": "1945", "detailAnswer": "Elle a été créée au lendemain de la Seconde Guerre mondiale pour protéger les travailleurs."},
+  {"id": 13, "categorie": "Principes et valeurs de la République", "question": "Que commémore la fête nationale ?", "options": ["La prise de la Bastille et la fête de la Fédération", "L'armistice de 1918", "La libération de Paris", "L'appel du 18 juin"], "answer": "La prise de la Bastille et la fête de la Fédération", "detailAnswer": "Le 14 juillet célèbre la prise de la Bastille (1789) et l'unité nationale (1790)."},
+  {"id": 14, "categorie": "Principes et valeurs de la République", "question": "Que porte Marianne sur la tête ?", "options": ["Un bonnet phrygien", "Une couronne", "Un béret", "Un foulard"], "answer": "Un bonnet phrygien", "detailAnswer": "Ce bonnet était porté par les esclaves affranchis à Rome, il symbolise la liberté."},
+  {"id": 15, "categorie": "Principes et valeurs de la République", "question": "Que signifie le mot \"fraternité\" dans la devise française ?", "options": ["La solidarité entre les citoyens", "Le droit d'avoir des frères", "L'obligation d'aider sa famille", "L'égalité des salaires"], "answer": "La solidarité entre les citoyens", "detailAnswer": "La fraternité implique l'entraide et la cohésion sociale entre tous les membres de la Nation."},
+  {"id": 16, "categorie": "Principes et valeurs de la République", "question": "Quel symbole de la République peut-on voir sur les maillots de l'équipe de France de football ?", "options": ["Le coq", "Marianne", "L'hexagone", "Le drapeau européen"], "answer": "Le coq", "detailAnswer": "Le coq gaulois est un symbole populaire très utilisé pour représenter la France à l'international."},
+  {"id": 17, "categorie": "Principes et valeurs de la République", "question": "Quelle est la devise de la République française ?", "options": ["Liberté, Égalité, Fraternité", "Travail, Famille, Patrie", "Paix, Justice, Solidarité", "Unité, Indivisibilité, Laïcité"], "answer": "Liberté, Égalité, Fraternité", "detailAnswer": "Héritée de la Révolution, cette devise résume les valeurs fondamentales de la République."},
+  {"id": 18, "categorie": "Principes et valeurs de la République", "question": "Qu'est-ce que la liberté d'association ?", "options": ["Le droit de créer ou de rejoindre une association", "Le droit de s'associer pour frauder les impôts", "L'obligation d'être dans un syndicat", "Le droit de faire du commerce"], "answer": "Le droit de créer ou de rejoindre une association", "detailAnswer": "Ce droit fondamental permet de se regrouper librement pour un but commun non lucratif."},
+  {"id": 19, "categorie": "Principes et valeurs de la République", "question": "Qu'est-ce qu'une liberté ?", "options": ["Le pouvoir d'agir dans le respect des droits des autres et de la loi", "Le droit de faire tout ce qu'on veut", "Une autorisation donnée par le maire", "Le droit de ne pas payer d'impôts"], "answer": "Le pouvoir d'agir dans le respect des droits des autres et de la loi", "detailAnswer": "Comme l'énonce la DDHC : la liberté consiste à pouvoir faire tout ce qui ne nuit pas à autrui."},
+  {"id": 20, "categorie": "Principes et valeurs de la République", "question": "Selon la Constitution, la France est une République...", "options": ["Indivisible, laïque, démocratique et sociale", "Catholique, royale et unifiée", "Fédérale, libérale et européenne", "Autoritaire, unie et protectrice"], "answer": "Indivisible, laïque, démocratique et sociale", "detailAnswer": "Ces quatre adjectifs figurent dès l'article 1er de la Constitution de 1958."},
+  {"id": 21, "categorie": "Principes et valeurs de la République", "question": "Sur quel document peut-on voir Marianne ?", "options": ["Les timbres-poste et les pièces de monnaie", "Les permis de conduire uniquement", "Les factures d'électricité", "Les cartes de transport"], "answer": "Les timbres-poste et les pièces de monnaie", "detailAnswer": "Le profil de Marianne orne de nombreux documents officiels, timbres et pièces en euros."},
+  {"id": 22, "categorie": "Principes et valeurs de la République", "question": "Une des valeurs de la devise républicaine est l'Égalité. Qu'est-ce que cela signifie ?", "options": ["Que tous les citoyens ont les mêmes droits et devoirs devant la loi", "Que tout le monde doit gagner le même salaire", "Que tout le monde doit penser la même chose", "Qu'il n'y a plus de riches ni de pauvres"], "answer": "Que tous les citoyens ont les mêmes droits et devoirs devant la loi", "detailAnswer": "L'égalité républicaine rejette les privilèges et garantit les mêmes droits pour tous."},
+  {"id": 23, "categorie": "Principes et valeurs de la République", "question": "Une personne peut-elle changer librement de religion en France ?", "options": ["Oui, c'est garanti par la liberté de conscience", "Non, c'est interdit par la loi", "Oui, mais il faut une autorisation de l'État", "Seulement à sa majorité"], "answer": "Oui, c'est garanti par la liberté de conscience", "detailAnswer": "La laïcité garantit à chacun le droit d'avoir une religion, d'en changer ou de n'en avoir aucune."},
+  {"id": 24, "categorie": "Principes et valeurs de la République", "question": "Selon le principe de laïcité, que signifie la neutralité de l'État ?", "options": ["L'État ne favorise ni ne finance aucune religion", "L'État interdit toutes les religions", "L'État impose une religion officielle", "L'État contrôle les prières privées"], "answer": "L'État ne favorise ni ne finance aucune religion", "detailAnswer": "L'État reste strictement neutre face aux croyances religieuses de ses citoyens."},
+  {"id": 25, "categorie": "Principes et valeurs de la République", "question": "Que peut faire un usager du service public dans une mairie ?", "options": ["Demander des documents d'état civil (acte de naissance, etc.)", "Prier dans le hall", "Ouvrir un compte bancaire", "Acheter des médicaments"], "answer": "Demander des documents d'état civil (acte de naissance, etc.)", "detailAnswer": "La mairie est le lieu administratif de proximité pour l'état civil et les démarches locales."},
+  {"id": 26, "categorie": "Principes et valeurs de la République", "question": "En France, il est possible pour l'État de financer :", "options": ["L'entretien des édifices religieux construits avant 1905", "La construction de nouvelles églises", "Le salaire des prêtres et imams", "L'achat de livres sacrés pour les fidèles"], "answer": "L'entretien des édifices religieux construits avant 1905", "detailAnswer": "L'État est propriétaire des églises bâties avant la loi de 1905 et en assure l'entretien patrimonial."},
+  {"id": 27, "categorie": "Principes et valeurs de la République", "question": "En quelle année la loi de séparation des Églises et de l'État a-t-elle été votée ?", "options": ["1905", "1789", "1945", "1958"], "answer": "1905", "detailAnswer": "Promulguée en décembre 1905, c'est le texte juridique fondateur de la laïcité française."},
+  {"id": 28, "categorie": "Principes et valeurs de la République", "question": "Que dit la loi de 1905 ?", "options": ["Elle sépare les Églises et l'État", "Elle instaure l'école gratuite", "Elle abolit la peine de mort", "Elle donne le droit de vote aux femmes"], "answer": "Elle sépare les Églises et l'État", "detailAnswer": "Elle met fin au Concordat et établit que la République ne salarie ni ne subventionne aucun culte."},
+  {"id": 29, "categorie": "Principes et valeurs de la République", "question": "Que garantit le principe de laïcité ?", "options": ["La liberté de conscience et de culte", "L'interdiction de toute religion", "L'obligation d'être athée", "Le financement des cultes par l'État"], "answer": "La liberté de conscience et de culte", "detailAnswer": "La laïcité protège la liberté de croire ou de ne pas croire dans le respect de l'ordre public."},
+  {"id": 30, "categorie": "Principes et valeurs de la République", "question": "Quel jour célèbre-t-on officiellement la laïcité en France ?", "options": ["Le 9 décembre", "Le 14 juillet", "Le 1er mai", "Le 11 novembre"], "answer": "Le 9 décembre", "detailAnswer": "C'est la date anniversaire de la promulgation de la loi de 1905."},
+  {"id": 31, "categorie": "Principes et valeurs de la République", "question": "Quel symbole religieux peut être porté dans une école publique dans le respect de la laïcité ?", "options": ["Un signe religieux discret", "Un voile intégral", "Une grande croix ostentatoire", "Une kippa visible"], "answer": "Un signe religieux discret", "detailAnswer": "Depuis 2004, le port de signes religieux ostensibles est interdit à l'école publique."},
+  {"id": 32, "categorie": "Principes et valeurs de la République", "question": "Quel terme désigne précisément la haine ou les préjugés contre les Juifs ?", "options": ["L'antisémitisme", "Le racisme", "La xénophobie", "L'islamophobie"], "answer": "L'antisémitisme", "detailAnswer": "L'antisémitisme est un délit sévèrement puni par la loi française."},
+  {"id": 33, "categorie": "Principes et valeurs de la République", "question": "Quel texte est considéré comme le texte fondateur de la laïcité ?", "options": ["La loi de séparation des Églises et de l'État de 1905", "La Déclaration des droits de l'homme de 1789", "La Constitution de 1958", "Le Code civil"], "answer": "La loi de séparation des Églises et de l'État de 1905", "detailAnswer": "Cette loi organise concrètement la neutralité de l'État face aux religions."},
+  {"id": 34, "categorie": "Principes et valeurs de la République", "question": "Quelle institution française doit rester neutre en matière de religion ?", "options": ["L'État et l'école publique", "Les entreprises privées", "Les associations sportives", "Les syndicats"], "answer": "L'État et l'école publique", "detailAnswer": "Les services publics doivent garantir une égalité de traitement sans distinction religieuse."},
+  {"id": 35, "categorie": "Principes et valeurs de la République", "question": "Qu'est-ce que la laïcité ?", "options": ["Un principe qui sépare l'État et les organisations religieuses", "Une religion d'État", "L'interdiction de croire en Dieu", "La tolérance de certaines religions seulement"], "answer": "Un principe qui sépare l'État et les organisations religieuses", "detailAnswer": "Elle assure la liberté de conscience tout en garantissant la neutralité des institutions."},
+  {"id": 36, "categorie": "Principes et valeurs de la République", "question": "À l'école, la charte de la laïcité permet de :", "options": ["Rappeler les règles du vivre-ensemble et de la laïcité", "Interdire la mixité filles/garçons", "Remplacer le règlement intérieur", "Imposer un uniforme"], "answer": "Rappeler les règles du vivre-ensemble et de la laïcité", "detailAnswer": "Affichée dans les écoles, elle explique pédagogiquement les principes laïques aux élèves."},
+  {"id": 37, "categorie": "Principes et valeurs de la République", "question": "Qui doit respecter et veiller à la neutralité religieuse dans les services publics ?", "options": ["Les agents du service public", "Les usagers uniquement", "Les enfants", "Les élus d'associations"], "answer": "Les agents du service public", "detailAnswer": "Les fonctionnaires incarnent l'État et ont un devoir de stricte neutralité durant leur service."},
+  {"id": 38, "categorie": "Principes et valeurs de la République", "question": "Une personne déclare ne croire en aucun dieu. On peut dire :", "options": ["Qu'elle est athée", "Qu'elle est agnostique", "Qu'elle est laïque", "Qu'elle est croyante"], "answer": "Qu'elle est athée", "detailAnswer": "L'athéisme est le rejet de la croyance en l'existence de divinités, protégé par la liberté de conscience."},
+  {"id": 39, "categorie": "Système institutionnel et politique", "question": "Comment est désigné le Premier ministre ?", "options": ["Il est nommé par le Président de la République", "Il est élu par les citoyens", "Il est tiré au sort", "Il est choisi par le Sénat"], "answer": "Il est nommé par le Président de la République", "detailAnswer": "L'article 8 de la Constitution donne au Président le pouvoir de nommer le chef du Gouvernement."},
+  {"id": 40, "categorie": "Système institutionnel et politique", "question": "Qui peut se présenter aux élections présidentielles ?", "options": ["Tout citoyen français majeur remplissant les conditions légales", "Seulement les maires", "Seulement les personnes de plus de 40 ans", "Tout résident en France depuis 10 ans"], "answer": "Tout citoyen français majeur remplissant les conditions légales", "detailAnswer": "Il faut notamment réunir 500 parrainages d'élus pour valider sa candidature."},
+  {"id": 41, "categorie": "Système institutionnel et politique", "question": "À qui appartient la souveraineté nationale ?", "options": ["Au peuple", "Au Président de la République", "Au gouvernement", "Aux juges"], "answer": "Au peuple", "detailAnswer": "En démocratie, le pouvoir appartient au peuple qui l'exerce via ses représentants élus ou par référendum."},
+  {"id": 42, "categorie": "Système institutionnel et politique", "question": "Qui est élu lors des élections municipales ?", "options": ["Les conseillers municipaux", "Les députés", "Les sénateurs", "Le préfet"], "answer": "Les conseillers municipaux", "detailAnswer": "Les citoyens élisent le conseil municipal, qui élira ensuite le maire parmi ses membres."},
+  {"id": 43, "categorie": "Système institutionnel et politique", "question": "L'inscription sur les listes électorales est :", "options": ["Nécessaire pour pouvoir voter", "Automatique pour les étrangers", "Payante", "Réservée aux plus de 21 ans"], "answer": "Nécessaire pour pouvoir voter", "detailAnswer": "C'est une démarche administrative indispensable avant de pouvoir se présenter aux urnes."},
+  {"id": 44, "categorie": "Système institutionnel et politique", "question": "Quelle condition est nécessaire pour voter aux élections présidentielles ?", "options": ["Être citoyen français et majeur", "Être propriétaire", "Payer des impôts", "Avoir un emploi"], "answer": "Être citoyen français et majeur", "detailAnswer": "Seuls les Français majeurs jouissant de leurs droits civiques peuvent voter à la présidentielle."},
+  {"id": 45, "categorie": "Système institutionnel et politique", "question": "Quelle condition faut-il remplir pour être candidat aux élections municipales ?", "options": ["Être inscrit sur les listes électorales de la commune", "Avoir un casier judiciaire vierge uniquement", "Être né dans la commune", "Être fonctionnaire"], "answer": "Être inscrit sur les listes électorales de la commune", "detailAnswer": "Il faut prouver une attache avec la commune (domicile ou paiement d'impôts locaux)."},
+  {"id": 46, "categorie": "Système institutionnel et politique", "question": "Parmi ces autorités, laquelle est élue ?", "options": ["Le Maire", "Le Préfet", "Le Ministre de l'Intérieur", "Le Directeur de la Police"], "answer": "Le Maire", "detailAnswer": "Le maire est élu localement, tandis que le préfet et les ministres sont nommés par l'État."},
+  {"id": 47, "categorie": "Système institutionnel et politique", "question": "Quelles sont les fonctions du maire ?", "options": ["Il gère la commune et représente l'État", "Il vote les lois à l'Assemblée", "Il juge les délits", "Il dirige l'armée"], "answer": "Il gère la commune et représente l'État", "detailAnswer": "Le maire est à la fois l'exécutif de la commune et un agent de l'État (état civil, police)."},
+  {"id": 48, "categorie": "Système institutionnel et politique", "question": "Qui peut se présenter aux élections présidentielles ?", "options": ["Un citoyen français majeur avec 500 parrainages d'élus", "Tout résident européen", "Les personnes ayant plus de 10 ans d'ancienneté en politique", "Uniquement les chefs de partis"], "answer": "Un citoyen français majeur avec 500 parrainages d'élus", "detailAnswer": "Les 500 signatures sont obligatoires pour filtrer les candidatures sérieuses."},
+  {"id": 49, "categorie": "Système institutionnel et politique", "question": "Une personne, n'ayant pas d'accès à internet, veut s'inscrire sur les listes électorales. Où peut-elle s'inscrire ?", "options": ["À la mairie de sa commune", "Au commissariat", "À la poste", "À la préfecture"], "answer": "À la mairie de sa commune", "detailAnswer": "L'inscription se fait au guichet de la mairie avec une pièce d'identité et un justificatif de domicile."},
+  {"id": 50, "categorie": "Système institutionnel et politique", "question": "À quel âge peut-on devenir électeur ?", "options": ["18 ans", "16 ans", "21 ans", "25 ans"], "answer": "18 ans", "detailAnswer": "La majorité civile et électorale est fixée à 18 ans en France depuis 1974."},
+  {"id": 51, "categorie": "Système institutionnel et politique", "question": "En France, est-ce obligatoire de voter ?", "options": ["Non, c'est un droit mais pas une obligation", "Oui, sinon on paie une amende", "Oui, sauf pour les élections européennes", "Non, sauf si on travaille pour l'État"], "answer": "Non, c'est un droit mais pas une obligation", "detailAnswer": "Le vote est un devoir civique moral, mais l'abstention n'est pas sanctionnée par la loi."},
+  {"id": 52, "categorie": "Système institutionnel et politique", "question": "A-t-on le droit de ne pas respecter une loi ?", "options": ["Non, nul n'est censé ignorer la loi", "Oui, si on n'est pas d'accord avec", "Oui, si on est étranger", "Oui, avec l'accord du maire"], "answer": "Non, nul n'est censé ignorer la loi", "detailAnswer": "Le respect des lois est fondamental pour maintenir l'ordre et l'équité dans la société."},
+  {"id": 53, "categorie": "Système institutionnel et politique", "question": "Comment sont désignés les députés ?", "options": ["Ils sont élus au suffrage universel direct", "Ils sont nommés par le Président", "Ils sont tirés au sort", "Ils sont élus par les maires"], "answer": "Ils sont élus au suffrage universel direct", "detailAnswer": "Les citoyens élisent directement les députés lors des élections législatives."},
+  {"id": 54, "categorie": "Système institutionnel et politique", "question": "Qui vote les lois ?", "options": ["Le Parlement (Assemblée nationale et Sénat)", "Le Président de la République", "Le Premier ministre", "Les juges"], "answer": "Le Parlement (Assemblée nationale et Sénat)", "detailAnswer": "Le pouvoir législatif est exercé conjointement par l'Assemblée nationale et le Sénat."},
+  {"id": 55, "categorie": "Système institutionnel et politique", "question": "La séparation des pouvoirs est un principe fondamental. Quels sont les trois pouvoirs concernés ?", "options": ["Exécutif, législatif, judiciaire", "Exécutif, politique, économique", "Législatif, médiatique, militaire", "Judiciaire, religieux, politique"], "answer": "Exécutif, législatif, judiciaire", "detailAnswer": "Cette séparation évite la dictature en empêchant qu'un seul organe concentre tous les pouvoirs."},
+  {"id": 56, "categorie": "Système institutionnel et politique", "question": "Qu'est-ce que l'État de droit ?", "options": ["Un système où tous sont soumis au respect du droit, y compris l'État", "Un État gouverné par la police", "Un État où le Président décide de tout", "Un pays sans lois"], "answer": "Un système où tous sont soumis au respect du droit, y compris l'État", "detailAnswer": "Dans un État de droit, les institutions publiques doivent elles aussi respecter les lois existantes."},
+  {"id": 57, "categorie": "Système institutionnel et politique", "question": "Quelles sont les durées du mandat du conseil municipal et du maire ?", "options": ["6 ans", "5 ans", "7 ans", "4 ans"], "answer": "6 ans", "detailAnswer": "Les élections municipales ont lieu tous les 6 ans."},
+  {"id": 58, "categorie": "Système institutionnel et politique", "question": "Qui est élu lors des élections législatives ?", "options": ["Les députés", "Les sénateurs", "Les maires", "Le Président de la République"], "answer": "Les députés", "detailAnswer": "Les 577 députés siègent à l'Assemblée nationale pour proposer et voter les lois."},
+  {"id": 59, "categorie": "Système institutionnel et politique", "question": "Quelle est la durée du mandat du Président de la République française ?", "options": ["5 ans", "7 ans", "4 ans", "6 ans"], "answer": "5 ans", "detailAnswer": "Le mandat présidentiel est passé de 7 ans (septennat) à 5 ans (quinquennat) en l'an 2000."},
+  {"id": 60, "categorie": "Système institutionnel et politique", "question": "Quelle est la durée du mandat des députés ?", "options": ["5 ans", "6 ans", "7 ans", "4 ans"], "answer": "5 ans", "detailAnswer": "Sauf en cas de dissolution de l'Assemblée nationale, les députés sont élus pour 5 ans."},
+  {"id": 61, "categorie": "Système institutionnel et politique", "question": "Quelle est la durée du mandat des sénateurs ?", "options": ["6 ans", "5 ans", "7 ans", "9 ans"], "answer": "6 ans", "detailAnswer": "Renouvelable par moitié tous les 3 ans, le mandat complet d'un sénateur dure 6 ans."},
+  {"id": 62, "categorie": "Système institutionnel et politique", "question": "Qui dirige l'action du gouvernement ?", "options": ["Le Premier ministre", "Le Président de la République", "Le Ministre de l'Intérieur", "Le Président de l'Assemblée nationale"], "answer": "Le Premier ministre", "detailAnswer": "Selon l'article 21 de la Constitution, le Premier ministre dirige l'action du Gouvernement."},
+  {"id": 63, "categorie": "Système institutionnel et politique", "question": "En France, est-ce possible d'adhérer à un parti politique ?", "options": ["Oui, c'est un droit constitutionnel", "Non, c'est interdit", "Seulement si on est élu", "Oui, mais il faut payer une taxe à l'État"], "answer": "Oui, c'est un droit constitutionnel", "detailAnswer": "Les partis politiques se forment et exercent leur activité librement en France."},
+  {"id": 64, "categorie": "Système institutionnel et politique", "question": "Qui sanctionne l'auteur d'un vol ?", "options": ["Le juge dans un tribunal", "La police", "Le maire", "Le préfet"], "answer": "Le juge dans un tribunal", "detailAnswer": "Seule la justice (le pouvoir judiciaire) a le pouvoir de prononcer des peines pénales."},
+  {"id": 65, "categorie": "Système institutionnel et politique", "question": "Qui gère les collèges publics ?", "options": ["Le Département", "La Région", "La Commune", "L'État central"], "answer": "Le Département", "detailAnswer": "Les conseils départementaux assurent la construction et l'entretien des collèges."},
+  {"id": 66, "categorie": "Système institutionnel et politique", "question": "Qui gère les écoles primaires et maternelles publiques ?", "options": ["La Commune", "Le Département", "La Région", "Le Ministère"], "answer": "La Commune", "detailAnswer": "Les mairies sont responsables des bâtiments, du matériel et du personnel non enseignant des écoles."},
+  {"id": 67, "categorie": "Système institutionnel et politique", "question": "Comment sont désignés les maires ?", "options": ["Ils sont élus par le conseil municipal", "Ils sont nommés par le Préfet", "Ils sont élus directement au suffrage universel", "Ils sont tirés au sort"], "answer": "Ils sont élus par le conseil municipal", "detailAnswer": "Après l'élection municipale, les conseillers s'assemblent pour élire le maire."},
+  {"id": 68, "categorie": "Système institutionnel et politique", "question": "Quelle collectivité territoriale est responsable des transports régionaux ?", "options": ["La Région", "Le Département", "La Commune", "L'État"], "answer": "La Région", "detailAnswer": "Les régions organisent notamment les transports express régionaux (TER)."},
+  {"id": 69, "categorie": "Système institutionnel et politique", "question": "Quelle est l'une des voies possibles pour modifier la Constitution ?", "options": ["Le référendum", "Un décret du maire", "Un arrêté préfectoral", "Le vote du seul Sénat"], "answer": "Le référendum", "detailAnswer": "Le Président peut soumettre la révision constitutionnelle à l'approbation du peuple par référendum."},
+  {"id": 70, "categorie": "Système institutionnel et politique", "question": "Qui assure l'intérim du président de la République en cas de décès ?", "options": ["Le Président du Sénat", "Le Premier ministre", "Le Président de l'Assemblée nationale", "Le Ministre de l'Intérieur"], "answer": "Le Président du Sénat", "detailAnswer": "C'est lui qui prend les fonctions présidentielles en attendant de nouvelles élections anticipées."},
+  {"id": 71, "categorie": "Système institutionnel et politique", "question": "Quel est le rôle du Conseil constitutionnel ?", "options": ["Vérifier que les lois sont conformes à la Constitution", "Élire le Président de la République", "Juger les criminels", "Voter le budget de l'État"], "answer": "Vérifier que les lois sont conformes à la Constitution", "detailAnswer": "Il contrôle la constitutionnalité des lois et veille à la régularité des élections nationales."},
+  {"id": 72, "categorie": "Système institutionnel et politique", "question": "Quelle condition est obligatoire pour se présenter à l'élection présidentielle ?", "options": ["Recueillir 500 parrainages d'élus", "Avoir fait son service militaire", "Avoir un diplôme universitaire", "Payer l'impôt sur la fortune"], "answer": "Recueillir 500 parrainages d'élus", "detailAnswer": "Ceci évite la prolifération de candidatures non représentatives."},
+  {"id": 73, "categorie": "Système institutionnel et politique", "question": "Combien y a-t-il de départements en France ?", "options": ["101", "95", "100", "110"], "answer": "101", "detailAnswer": "Il y a 96 départements en métropole et 5 départements d'outre-mer."},
+  {"id": 74, "categorie": "Système institutionnel et politique", "question": "Comment est organisé le découpage administratif de la France ?", "options": ["Communes, Départements, Régions", "Cantons, Provinces, États", "Quartiers, Arrondissements, Métropoles", "Villes, Comtés, Régions"], "answer": "Communes, Départements, Régions", "detailAnswer": "C'est l'organisation territoriale issue des lois de décentralisation."},
+  {"id": 75, "categorie": "Système institutionnel et politique", "question": "Qui représente l'État dans un département ?", "options": ["Le préfet", "Le maire du chef-lieu", "Le député", "Le président du Conseil départemental"], "answer": "Le préfet", "detailAnswer": "Nommé par le Président, le préfet dirige les services déconcentrés de l'État dans le département."},
+  {"id": 76, "categorie": "Système institutionnel et politique", "question": "Quel est le rôle du Président de la République ?", "options": ["Il veille au respect de la Constitution et est le chef des armées", "Il vote les lois", "Il juge les infractions", "Il dirige la mairie de Paris"], "answer": "Il veille au respect de la Constitution et est le chef des armées", "detailAnswer": "Il est la clé de voûte des institutions et le garant de l'indépendance nationale."},
+  {"id": 77, "categorie": "Système institutionnel et politique", "question": "Quel est le rôle du Premier ministre ?", "options": ["Il dirige l'action du Gouvernement", "Il préside le Sénat", "Il promulgue les lois", "Il nomme le Président"], "answer": "Il dirige l'action du Gouvernement", "detailAnswer": "Il assure l'exécution des lois et coordonne l'action des différents ministères."},
+  {"id": 78, "categorie": "Système institutionnel et politique", "question": "Quel est le rôle du Défenseur des droits ?", "options": ["Protéger les droits et libertés des citoyens", "Défendre la France à l'étranger", "Avocat gratuit pour tous", "Juger les policiers"], "answer": "Protéger les droits et libertés des citoyens", "detailAnswer": "C'est une autorité indépendante chargée de lutter contre les discriminations et défendre les usagers."},
+  {"id": 79, "categorie": "Système institutionnel et politique", "question": "En quelle année la citoyenneté européenne a-t-elle été créée ?", "options": ["1992 (Traité de Maastricht)", "1957", "2002", "1945"], "answer": "1992 (Traité de Maastricht)", "detailAnswer": "Ce traité a donné aux citoyens des pays membres de nouveaux droits à l'échelle européenne."},
+  {"id": 80, "categorie": "Système institutionnel et politique", "question": "Quel est le dernier État à avoir intégré l'Union Européenne en 2013 ?", "options": ["La Croatie", "La Roumanie", "La Bulgarie", "La Serbie"], "answer": "La Croatie", "detailAnswer": "La Croatie est le 28e pays à avoir rejoint l'UE (avant le départ du Royaume-Uni)."},
+  {"id": 81, "categorie": "Système institutionnel et politique", "question": "Qui a composé l'hymne de l'Union européenne ?", "options": ["Ludwig van Beethoven (Ode à la joie)", "Wolfgang Amadeus Mozart", "Frédéric Chopin", "Claude Debussy"], "answer": "Ludwig van Beethoven (Ode à la joie)", "detailAnswer": "L'hymne européen est issu de la Neuvième Symphonie de Beethoven."},
+  {"id": 82, "categorie": "Système institutionnel et politique", "question": "Quand est célébrée la journée de l'Europe ?", "options": ["Le 9 mai", "Le 14 juillet", "Le 1er janvier", "Le 8 mai"], "answer": "Le 9 mai", "detailAnswer": "Le 9 mai célèbre la fameuse Déclaration Schuman de 1950, fondatrice de l'Europe unie."},
+  {"id": 83, "categorie": "Système institutionnel et politique", "question": "Où est le siège de la Banque centrale européenne ?", "options": ["Francfort", "Bruxelles", "Strasbourg", "Paris"], "answer": "Francfort", "detailAnswer": "La BCE, responsable de la monnaie unique, est située en Allemagne, à Francfort."},
+  {"id": 84, "categorie": "Système institutionnel et politique", "question": "Où est le siège de la Commission européenne ?", "options": ["Bruxelles", "Strasbourg", "Luxembourg", "Genève"], "answer": "Bruxelles", "detailAnswer": "La Commission, organe exécutif de l'UE, a son siège principal en Belgique."},
+  {"id": 85, "categorie": "Système institutionnel et politique", "question": "Qui siège au Parlement européen ?", "options": ["Les députés européens élus par les citoyens de l'UE", "Les présidents des pays membres", "Des juges internationaux", "Des ambassadeurs"], "answer": "Les députés européens élus par les citoyens de l'UE", "detailAnswer": "Ils représentent directement les peuples des États membres de l'Union."},
+  {"id": 86, "categorie": "Système institutionnel et politique", "question": "Les citoyens de l'Union européenne peuvent-ils voter aux élections locales dans un autre État de l'Union ?", "options": ["Oui, aux élections municipales et européennes", "Non, c'est interdit", "Oui, mais uniquement pour les présidentielles", "Seulement s'ils ont la double nationalité"], "answer": "Oui, aux élections municipales et européennes", "detailAnswer": "La citoyenneté européenne octroie le droit de vote municipal dans l'État de résidence."},
+  {"id": 87, "categorie": "Système institutionnel et politique", "question": "Combien d'États font partie de l'Union européenne au 1er janvier 2025 ?", "options": ["27", "28", "25", "30"], "answer": "27", "detailAnswer": "Depuis le retrait du Royaume-Uni, l'UE compte 27 États membres."},
+  {"id": 88, "categorie": "Système institutionnel et politique", "question": "En quelle année le traité de Maastricht a-t-il été signé ?", "options": ["1992", "1957", "2002", "1989"], "answer": "1992", "detailAnswer": "Il a officiellement fondé l'Union européenne et préparé l'arrivée de l'euro."},
+  {"id": 89, "categorie": "Système institutionnel et politique", "question": "Quel traité concerne la construction de l'Union européenne ?", "options": ["Le Traité de Rome", "Le Traité de Versailles", "Le Traité de Paris", "Le Traité de Tordesillas"], "answer": "Le Traité de Rome", "detailAnswer": "Signé en 1957, il crée la Communauté Économique Européenne (CEE)."},
+  {"id": 90, "categorie": "Système institutionnel et politique", "question": "Quel État a quitté l'Union Européenne en 2020 ?", "options": ["Le Royaume-Uni", "La Suisse", "La Norvège", "La Grèce"], "answer": "Le Royaume-Uni", "detailAnswer": "C'est l'événement majeur connu sous le nom de Brexit."},
+  {"id": 91, "categorie": "Système institutionnel et politique", "question": "Quelle est la devise de l'Union européenne ?", "options": ["Unie dans la diversité", "Liberté, Égalité, Fraternité", "La paix pour tous", "L'union fait la force"], "answer": "Unie dans la diversité", "detailAnswer": "Cette devise souligne la richesse culturelle et la paix partagée par les Européens."},
+  {"id": 92, "categorie": "Système institutionnel et politique", "question": "Quel est l'hymne de l'Union Européenne ?", "options": ["L'Ode à la joie", "La Marseillaise", "God Save the King", "L'Internationale"], "answer": "L'Ode à la joie", "detailAnswer": "Tiré de la 9e symphonie de Beethoven, il exprime l'idéal de fraternité humaine."},
+  {"id": 93, "categorie": "Système institutionnel et politique", "question": "De quoi est composé le drapeau européen ?", "options": ["12 étoiles dorées en cercle sur fond bleu", "15 étoiles blanches sur fond rouge", "27 étoiles dorées sur fond bleu", "Une colombe sur fond bleu"], "answer": "12 étoiles dorées en cercle sur fond bleu", "detailAnswer": "Les 12 étoiles symbolisent les idéaux de perfection, de plénitude et d'unité."},
+  {"id": 94, "categorie": "Système institutionnel et politique", "question": "Qui élit les députés européens ?", "options": ["Les citoyens des États membres au suffrage universel direct", "Les parlements nationaux", "Les gouvernements", "La Commission européenne"], "answer": "Les citoyens des États membres au suffrage universel direct", "detailAnswer": "Les élections européennes ont lieu tous les cinq ans."},
+  {"id": 95, "categorie": "Système institutionnel et politique", "question": "Où est le siège du Parlement européen ?", "options": ["Strasbourg", "Paris", "Bruxelles", "Berlin"], "answer": "Strasbourg", "detailAnswer": "Strasbourg, en France, accueille le siège officiel et les sessions plénières du Parlement."},
+  {"id": 96, "categorie": "Droits et devoirs", "question": "À quoi sert le droit de grève ?", "options": ["À défendre les intérêts professionnels des salariés", "À partir en vacances plus tôt", "À ne pas payer d'impôts", "À manifester contre l'Europe"], "answer": "À défendre les intérêts professionnels des salariés", "detailAnswer": "C'est un droit constitutionnel garantissant l'expression de revendications collectives au travail."},
+  {"id": 97, "categorie": "Droits et devoirs", "question": "Au nom de quoi l'État justifie-t-il la restriction des droits ?", "options": ["Pour garantir l'ordre public et la sécurité de tous", "Pour économiser de l'argent", "Pour interdire l'opposition politique", "Pour favoriser les plus riches"], "answer": "Pour garantir l'ordre public et la sécurité de tous", "detailAnswer": "Une liberté peut être temporairement limitée pour protéger l'intérêt général (ex: confinement)."},
+  {"id": 98, "categorie": "Droits et devoirs", "question": "Laquelle de ces citations est inscrite dans la Déclaration des Droits de l'Homme et du Citoyen de 1789 ?", "options": ["Les hommes naissent et demeurent libres et égaux en droits", "L'État c'est moi", "Un pour tous, tous pour un", "La République est une et indivisible"], "answer": "Les hommes naissent et demeurent libres et égaux en droits", "detailAnswer": "C'est le célèbre article premier de la DDHC qui abolit les privilèges de naissance."},
+  {"id": 99, "categorie": "Droits et devoirs", "question": "L'article 4 de la DDHC affirme que \"la liberté consiste à pouvoir faire tout ce qui ne nuit pas à autrui\". Qu'est-ce que cela signifie ?", "options": ["Ma liberté s'arrête là où commence celle des autres", "Je peux tout faire sans limite", "La liberté est une illusion", "Seuls les citoyens ont des droits"], "answer": "Ma liberté s'arrête là où commence celle des autres", "detailAnswer": "L'exercice de mes droits ne doit pas entraver ceux de mes concitoyens."},
+  {"id": 100, "categorie": "Droits et devoirs", "question": "Que dit l'article 1er de la Constitution française ?", "options": ["La France est une République indivisible, laïque, démocratique et sociale", "La France est une monarchie constitutionnelle", "La langue de la République est le français", "L'emblème national est le drapeau tricolore"], "answer": "La France est une République indivisible, laïque, démocratique et sociale", "detailAnswer": "Cet article fonde les grands piliers de l'État républicain contemporain."},
+  {"id": 101, "categorie": "Droits et devoirs", "question": "Que garantit la liberté de la presse ?", "options": ["Le droit de publier et diffuser librement des idées et opinions", "La gratuité des journaux", "Le monopole de l'État sur l'information", "Le droit de diffamer anonymement"], "answer": "Le droit de publier et diffuser librement des idées et opinions", "detailAnswer": "La liberté de la presse, encadrée par la loi de 1881, est essentielle à la démocratie."},
+  {"id": 102, "categorie": "Droits et devoirs", "question": "Que permet la liberté de circulation ?", "options": ["De se déplacer librement à l'intérieur du territoire national", "De conduire sans permis", "De voyager gratuitement en train", "De franchir les frontières sans contrôle jamais"], "answer": "De se déplacer librement à l'intérieur du territoire national", "detailAnswer": "C'est un droit fondamental permettant d'aller et venir librement sans entrave."},
+  {"id": 103, "categorie": "Droits et devoirs", "question": "Que signifie être citoyen d'un État ?", "options": ["Bénéficier de droits civils et politiques et être soumis à des devoirs", "Y habiter depuis plus de 5 ans", "Payer des impôts sans droit de vote", "Être né dans cet État obligatoirement"], "answer": "Bénéficier de droits civils et politiques et être soumis à des devoirs", "detailAnswer": "La citoyenneté lie l'individu à l'État par un ensemble de droits (vote) et devoirs (impôts)."},
+  {"id": 104, "categorie": "Droits et devoirs", "question": "Que sont les droits fondamentaux ?", "options": ["Les droits essentiels inhérents à tout être humain", "Les droits des travailleurs uniquement", "Les droits accordés uniquement aux présidents", "Les droits de propriété sur des biens"], "answer": "Les droits essentiels inhérents à tout être humain", "detailAnswer": "Ils incluent le droit à la vie, la liberté, et sont garantis par la Constitution et les traités internationaux."},
+  {"id": 105, "categorie": "Droits et devoirs", "question": "Quel droit protège une personne contre une arrestation arbitraire ?", "options": ["La liberté individuelle", "La liberté syndicale", "Le droit au logement", "La liberté de culte"], "answer": "La liberté individuelle", "detailAnswer": "Nul ne peut être arbitrairement détenu, selon l'article 66 de la Constitution."},
+  {"id": 106, "categorie": "Droits et devoirs", "question": "Quel est le texte fondateur établissant les droits et les devoirs de chaque citoyen ?", "options": ["La Déclaration des Droits de l'Homme et du Citoyen", "Le Code Civil", "La Charte de l'environnement", "Le Code Pénal"], "answer": "La Déclaration des Droits de l'Homme et du Citoyen", "detailAnswer": "Rédigée en 1789, elle inspire encore aujourd'hui tout notre système juridique."},
+  {"id": 107, "categorie": "Droits et devoirs", "question": "Quel texte affirme que tous les hommes naissent libres et égaux en droits ?", "options": ["La Déclaration des Droits de l'Homme et du Citoyen", "L'Hymne national", "La Constitution de 1958", "Le Traité de Rome"], "answer": "La Déclaration des Droits de l'Homme et du Citoyen", "detailAnswer": "C'est la phrase d'ouverture (Article 1) de ce document historique."},
+  {"id": 108, "categorie": "Droits et devoirs", "question": "Quelle situation est une atteinte à la dignité humaine ?", "options": ["L'esclavage et la torture", "Payer des impôts", "Travailler 35 heures", "Passer le permis de conduire"], "answer": "L'esclavage et la torture", "detailAnswer": "La dignité humaine est inviolable, la loi condamne sévèrement l'esclavage et la torture."},
+  {"id": 109, "categorie": "Droits et devoirs", "question": "Qu'est-ce que la liberté d'expression ?", "options": ["Le droit d'exprimer librement ses opinions dans le respect des autres", "Le droit d'insulter qui on veut", "L'interdiction de critiquer le gouvernement", "Le droit de parler fort dans la rue"], "answer": "Le droit d'exprimer librement ses opinions dans le respect des autres", "detailAnswer": "Elle est permise tant qu'elle ne tombe pas sous le coup de la loi (diffamation, appel à la haine)."},
+  {"id": 110, "categorie": "Droits et devoirs", "question": "Suite à une interpellation par la police, il est possible de :", "options": ["Garder le silence et demander un avocat", "S'enfuir", "Menacer le policier", "Refuser de décliner son identité"], "answer": "Garder le silence et demander un avocat", "detailAnswer": "Ce sont des droits fondamentaux de la défense lors d'une garde à vue."},
+  {"id": 111, "categorie": "Droits et devoirs", "question": "Tous les citoyens français ont-ils une religion ?", "options": ["Non, chacun est libre d'avoir une religion ou de n'en avoir aucune", "Oui, la religion catholique est obligatoire", "Oui, il faut déclarer sa religion à la mairie", "Non, la religion est interdite en France"], "answer": "Non, chacun est libre d'avoir une religion ou de n'en avoir aucune", "detailAnswer": "La liberté de croyance ou de non-croyance est un droit strictement personnel en France."},
+  {"id": 112, "categorie": "Droits et devoirs", "question": "À quel âge est la majorité numérique en France ?", "options": ["15 ans", "18 ans", "13 ans", "21 ans"], "answer": "15 ans", "detailAnswer": "À 15 ans, un mineur peut consentir seul au traitement de ses données personnelles."},
+  {"id": 113, "categorie": "Droits et devoirs", "question": "Dans lequel de ces endroits est-on autorisé à fumer ?", "options": ["Dans la rue", "Dans un restaurant fermé", "Dans une école", "Dans un hôpital"], "answer": "Dans la rue", "detailAnswer": "La loi Évin interdit de fumer dans les lieux affectés à un usage collectif fermé et couvert."},
+  {"id": 114, "categorie": "Droits et devoirs", "question": "En France, la conduite sans permis d'une moto est :", "options": ["Un délit pénalement sanctionné", "Autorisée sur les petites routes", "Autorisée si on porte un casque", "Tolérée le dimanche"], "answer": "Un délit pénalement sanctionné", "detailAnswer": "Conduire sans permis est un délit grave passible de peines de prison et de fortes amendes."},
+  {"id": 115, "categorie": "Droits et devoirs", "question": "En quoi consiste le devoir de solidarité ?", "options": ["Payer ses impôts et cotisations sociales pour aider la collectivité", "Prêter de l'argent à ses voisins", "Faire des dons aux églises", "Accueillir des sans-abris chez soi"], "answer": "Payer ses impôts et cotisations sociales pour aider la collectivité", "detailAnswer": "Les cotisations permettent de financer le système de protection sociale pour tous."},
+  {"id": 116, "categorie": "Droits et devoirs", "question": "Est-ce légal d'être marié à plusieurs personnes en même temps ?", "options": ["Non, la polygamie est interdite en France", "Oui, si tout le monde est d'accord", "Oui, pour les hommes uniquement", "Non, sauf avec une dérogation"], "answer": "Non, la polygamie est interdite en France", "detailAnswer": "Le Code civil impose la monogamie pour protéger le mariage et l'égalité des époux."},
+  {"id": 117, "categorie": "Droits et devoirs", "question": "Est-ce obligatoire de déclarer ses impôts chaque année en France ?", "options": ["Oui, même si on ne paie pas d'impôts", "Non, seulement si on gagne beaucoup", "Non, l'employeur s'en charge", "Oui, mais uniquement pour les propriétaires"], "answer": "Oui, même si on ne paie pas d'impôts", "detailAnswer": "Une déclaration de revenus annuelle est une obligation fiscale pour tous les résidents."},
+  {"id": 118, "categorie": "Droits et devoirs", "question": "Est-il obligatoire de porter secours à une personne en danger ?", "options": ["Oui, la non-assistance à personne en danger est un délit", "Non, c'est le travail des pompiers", "Seulement si on est médecin", "Non, c'est au choix"], "answer": "Oui, la non-assistance à personne en danger est un délit", "detailAnswer": "La loi punit le fait de s'abstenir de porter secours à quelqu'un en péril si cela est sans risque pour soi."},
+  {"id": 119, "categorie": "Droits et devoirs", "question": "Être juré d'assises est :", "options": ["Un devoir civique", "Une profession rémunérée", "Facultatif", "Réservé aux avocats"], "answer": "Un devoir civique", "detailAnswer": "Les jurés sont tirés au sort parmi les citoyens inscrits sur les listes électorales."},
+  {"id": 120, "categorie": "Droits et devoirs", "question": "La vente d'alcool en France est interdite aux personnes de moins de :", "options": ["18 ans", "16 ans", "21 ans", "14 ans"], "answer": "18 ans", "detailAnswer": "C'est une loi de santé publique visant à protéger les mineurs contre l'alcoolisme."},
+  {"id": 121, "categorie": "Droits et devoirs", "question": "Le non-respect du code de la route est :", "options": ["Une infraction punie par la loi", "Toléré la nuit", "Autorisé pour les vélos", "Sans gravité"], "answer": "Une infraction punie par la loi", "detailAnswer": "Les infractions routières entraînent des amendes, des retraits de points ou de permis."},
+  {"id": 122, "categorie": "Droits et devoirs", "question": "Lequel de ces crimes ou délits peut entrainer la privation des droits civils et politiques par un juge ?", "options": ["Un crime ou délit grave (fraude, corruption, etc.)", "Une amende pour stationnement", "Un excès de vitesse mineur", "Ne pas voter aux élections"], "answer": "Un crime ou délit grave (fraude, corruption, etc.)", "detailAnswer": "Un juge peut décider d'ôter le droit de vote à la suite d'une condamnation lourde."},
+  {"id": 123, "categorie": "Droits et devoirs", "question": "Pour obtenir une carte d'identité, il faut :", "options": ["Faire la demande à la mairie avec les justificatifs nécessaires", "Payer une taxe à la préfecture", "Avoir un travail", "Avoir 18 ans minimum"], "answer": "Faire la demande à la mairie avec les justificatifs nécessaires", "detailAnswer": "Cette démarche administrative est à initier dans une mairie équipée du dispositif."},
+  {"id": 124, "categorie": "Droits et devoirs", "question": "Pour quel motif peut-on limiter la liberté d'expression ?", "options": ["En cas de diffamation, injures ou incitation à la haine raciale", "Si on critique le gouvernement", "Si on dit une bêtise", "Si on n'est pas d'accord avec la majorité"], "answer": "En cas de diffamation, injures ou incitation à la haine raciale", "detailAnswer": "Ces limites protègent la dignité des personnes contre les abus publics."},
+  {"id": 125, "categorie": "Droits et devoirs", "question": "Que doit faire un citoyen s'il est appelé à être juré dans un procès d'assises ?", "options": ["Il doit y participer (sauf motif légitime d'exemption)", "Il peut refuser sans raison", "Il doit payer un remplaçant", "Il n'y va que si c'est près de chez lui"], "answer": "Il doit y participer (sauf motif légitime d'exemption)", "detailAnswer": "C'est une obligation civique dont on ne peut être dispensé que pour motif grave (maladie)."},
+  {"id": 126, "categorie": "Droits et devoirs", "question": "Quel est l'âge de la majorité civile en France ?", "options": ["18 ans", "21 ans", "16 ans", "25 ans"], "answer": "18 ans", "detailAnswer": "Depuis 1974, la pleine capacité juridique s'acquiert à 18 ans."},
+  {"id": 127, "categorie": "Droits et devoirs", "question": "Quel est l'un des devoirs principaux d'un citoyen français ?", "options": ["Respecter les lois de la République", "Être propriétaire de son logement", "Avoir une voiture", "Voyager en Europe"], "answer": "Respecter les lois de la République", "detailAnswer": "Le respect de la loi est la condition sine qua non de la vie en société."},
+  {"id": 128, "categorie": "Droits et devoirs", "question": "Quelle est l'infraction la plus grave ?", "options": ["Le crime (homicide, viol, braquage...)", "La contravention", "Le délit", "L'incivilité"], "answer": "Le crime (homicide, viol, braquage...)", "detailAnswer": "Les infractions se classent par gravité : contravention (faible), délit (moyen), crime (très grave)."},
+  {"id": 129, "categorie": "Droits et devoirs", "question": "Qu'est-ce que la citoyenneté numérique ?", "options": ["L'utilisation responsable et respectueuse d'Internet et des réseaux sociaux", "Le droit d'avoir un ordinateur gratuit", "Le vote par internet obligatoire", "L'obligation d'avoir un compte Facebook"], "answer": "L'utilisation responsable et respectueuse d'Internet et des réseaux sociaux", "detailAnswer": "C'est la capacité à évoluer en ligne en respectant la loi et les autres internautes."},
+  {"id": 130, "categorie": "Droits et devoirs", "question": "Qu'est-ce que le devoir de mémoire ?", "options": ["L'obligation morale de se souvenir des événements tragiques du passé", "L'obligation d'apprendre l'histoire par cœur", "Le fait de célébrer les anniversaires des présidents", "Une taxe sur les monuments historiques"], "answer": "L'obligation morale de se souvenir des événements tragiques du passé", "detailAnswer": "Il vise à rendre hommage aux victimes et à éviter que l'Histoire tragique ne se répète."},
+  {"id": 131, "categorie": "Droits et devoirs", "question": "Qui peut être appelé à faire partie d'un jury d'assises en France ?", "options": ["Les citoyens français tirés au sort sur les listes électorales", "Uniquement les avocats", "Les étrangers résidents", "Les policiers à la retraite"], "answer": "Les citoyens français tirés au sort sur les listes électorales", "detailAnswer": "La cour d'assises est la seule juridiction où le peuple juge directement les crimes."},
+  {"id": 132, "categorie": "Droits et devoirs", "question": "Une personne est privée de ses droits civils et politiques pendant 5 ans suite à une condamnation.", "options": ["Elle ne peut ni voter ni être élue pendant 5 ans", "Elle doit quitter le pays pendant 5 ans", "Elle ne paie plus d'impôts pendant 5 ans", "Elle ne peut pas travailler pendant 5 ans"], "answer": "Elle ne peut ni voter ni être élue pendant 5 ans", "detailAnswer": "C'est une peine complémentaire que le juge peut infliger pour certaines infractions graves."},
+  {"id": 133, "categorie": "Droits et devoirs", "question": "Parmi ces propositions laquelle est correcte ? Pendant 5 ans,...", "options": ["Elle ne pourra pas s'inscrire sur les listes électorales", "Elle ne pourra pas se marier", "Elle ne pourra pas conduire", "Elle ne pourra pas aller à l'hôpital"], "answer": "Elle ne pourra pas s'inscrire sur les listes électorales", "detailAnswer": "Sans droits civiques et politiques, l'inscription électorale est temporairement suspendue."},
+  {"id": 134, "categorie": "Histoire, géographie et culture", "question": "Parmi ces textes, lequel a été adopté sous Napoléon ler ?", "options": ["Le Code civil", "La Déclaration des droits de l'homme", "La loi sur la laïcité", "La charte de l'environnement"], "answer": "Le Code civil", "detailAnswer": "Promulgué en 1804, il a unifié le droit privé en France."},
+  {"id": 135, "categorie": "Histoire, géographie et culture", "question": "Qui a été président de la Ve République ?", "options": ["Charles de Gaulle", "Napoléon Bonaparte", "Louis XIV", "Jean Jaurès"], "answer": "Charles de Gaulle", "detailAnswer": "De Gaulle est le premier président de la Cinquième République, instituée en 1958."},
+  {"id": 136, "categorie": "Histoire, géographie et culture", "question": "Quel est l'objectif des lois scolaires de la Ille République ?", "options": ["Rendre l'école primaire gratuite, laïque et obligatoire", "Faire payer l'école", "Interdire l'enseignement aux filles", "Donner le contrôle de l'école à l'Église"], "answer": "Rendre l'école primaire gratuite, laïque et obligatoire", "detailAnswer": "Portées par Jules Ferry, ces lois fondent l'école publique moderne (1881-1882)."},
+  {"id": 137, "categorie": "Histoire, géographie et culture", "question": "Que signifie la date du 14 juillet pour les Français ?", "options": ["La fête nationale, commémorant la prise de la Bastille", "La fin de la 1ère guerre mondiale", "La naissance de Marianne", "L'abolition de l'esclavage"], "answer": "La fête nationale, commémorant la prise de la Bastille", "detailAnswer": "Événement clé de la Révolution en 1789 qui marque la chute de l'absolutisme royal."},
+  {"id": 138, "categorie": "Histoire, géographie et culture", "question": "Pourquoi l'année 1958 est importante pour la France ?", "options": ["C'est l'adoption de la Constitution de la Ve République", "C'est la fin de l'Empire de Napoléon", "C'est l'année de la séparation des églises et de l'État", "C'est l'année de l'abolition de la peine de mort"], "answer": "C'est l'adoption de la Constitution de la Ve République", "detailAnswer": "Elle met fin à l'instabilité de la IVe République en renforçant le pouvoir exécutif."},
+  {"id": 139, "categorie": "Histoire, géographie et culture", "question": "Lequel de ces pays est un pays fondateur de l'Union Européenne ?", "options": ["La France", "Le Royaume-Uni", "L'Espagne", "La Pologne"], "answer": "La France", "detailAnswer": "La France, avec l'Allemagne, l'Italie et le Benelux, est à l'origine de l'Europe."},
+  {"id": 140, "categorie": "Histoire, géographie et culture", "question": "Simone Veil est une figure importante de l'histoire française. Elle a notamment :", "options": ["Fait adopter la loi autorisant l'IVG (avortement)", "Créé la sécurité sociale", "Peint la Joconde", "Découvert la radioactivité"], "answer": "Fait adopter la loi autorisant l'IVG (avortement)", "detailAnswer": "Ministre de la Santé, elle a porté cette loi historique devant l'Assemblée en 1974."},
+  {"id": 141, "categorie": "Histoire, géographie et culture", "question": "Dans quelle région est située une partie des plages du débarquement ?", "options": ["En Normandie", "En Bretagne", "En Provence", "En Nouvelle-Aquitaine"], "answer": "En Normandie", "detailAnswer": "Le débarquement allié du 6 juin 1944 s'est déroulé sur les côtes normandes."},
+  {"id": 142, "categorie": "Histoire, géographie et culture", "question": "Dans quelle ville les rois de France étaient-ils couronnés ?", "options": ["Reims", "Paris", "Versailles", "Orléans"], "answer": "Reims", "detailAnswer": "La cathédrale de Reims était le lieu du sacre des rois de France depuis l'Antiquité."},
+  {"id": 143, "categorie": "Histoire, géographie et culture", "question": "Quel roi de France a été guillotiné pendant la Révolution française ?", "options": ["Louis XVI", "Henri IV", "Louis XIV", "Charles X"], "answer": "Louis XVI", "detailAnswer": "Condamné pour haute trahison, il fut exécuté publiquement à Paris en 1793."},
+  {"id": 144, "categorie": "Histoire, géographie et culture", "question": "En quelle année a débuté la Révolution française ?", "options": ["1789", "1804", "1905", "1958"], "answer": "1789", "detailAnswer": "L'année 1789 marque un tournant historique avec la fin de l'Ancien Régime."},
+  {"id": 145, "categorie": "Histoire, géographie et culture", "question": "En quelle année Napoléon ler est-il devenu empereur ?", "options": ["1804", "1789", "1848", "1914"], "answer": "1804", "detailAnswer": "Il s'est sacré Empereur des Français à Notre-Dame de Paris en décembre 1804."},
+  {"id": 146, "categorie": "Histoire, géographie et culture", "question": "Lequel de ces personnages a un lien avec la République française ?", "options": ["Marianne", "Jeanne d'Arc", "Vercingétorix", "Clovis"], "answer": "Marianne", "detailAnswer": "Marianne est l'allégorie de la République, alors que les autres sont liés à l'histoire pré-républicaine."},
+  {"id": 147, "categorie": "Histoire, géographie et culture", "question": "De quand date l'appel à la résistance du général de Gaulle ?", "options": ["18 juin 1940", "11 novembre 1918", "8 mai 1945", "14 juillet 1789"], "answer": "18 juin 1940", "detailAnswer": "Cet appel, lancé depuis Londres, exhorte les Français à ne pas cesser le combat."},
+  {"id": 148, "categorie": "Histoire, géographie et culture", "question": "Qu'est-ce que la Shoah ?", "options": ["L'extermination des Juifs par l'Allemagne nazie", "Une bataille de la Révolution", "Un mouvement artistique du XXe siècle", "Une crise économique en France"], "answer": "L'extermination des Juifs par l'Allemagne nazie", "detailAnswer": "Ce génocide systématique a causé la mort de millions de Juifs durant la 2nde Guerre mondiale."},
+  {"id": 149, "categorie": "Histoire, géographie et culture", "question": "Quel pays a été une colonie française ?", "options": ["L'Algérie", "Le Brésil", "Le Japon", "L'Afrique du Sud"], "answer": "L'Algérie", "detailAnswer": "L'Algérie a été colonisée en 1830 et a obtenu son indépendance en 1962 après une guerre."},
+  {"id": 150, "categorie": "Histoire, géographie et culture", "question": "Qui a rendu l'école gratuite, laïque et obligatoire ?", "options": ["Jules Ferry", "Victor Hugo", "Charlemagne", "Léon Blum"], "answer": "Jules Ferry", "detailAnswer": "Sous la IIIe République, Jules Ferry porte les lois fondamentales sur l'éducation publique."},
+  {"id": 151, "categorie": "Histoire, géographie et culture", "question": "Depuis quand les Français élisent-ils le président de la République au suffrage universel direct ?", "options": ["1962", "1789", "1905", "2000"], "answer": "1962", "detailAnswer": "Cette réforme voulue par De Gaulle donne une forte légitimité démocratique au Président."},
+  {"id": 152, "categorie": "Histoire, géographie et culture", "question": "En quelle année l'Union européenne a-t-elle été fondée ?", "options": ["1992 (Traité de Maastricht)", "1945", "1957", "2002"], "answer": "1992 (Traité de Maastricht)", "detailAnswer": "Ce traité institue officiellement l'Union européenne en remplacement de la CEE."},
+  {"id": 153, "categorie": "Histoire, géographie et culture", "question": "Quand a eu lieu la Seconde guerre mondiale ?", "options": ["De 1939 à 1945", "De 1914 à 1918", "De 1870 à 1871", "De 1954 à 1962"], "answer": "De 1939 à 1945", "detailAnswer": "Elle débute avec l'invasion de la Pologne par l'Allemagne et s'achève avec la capitulation du Japon."},
+  {"id": 154, "categorie": "Histoire, géographie et culture", "question": "Quand a eu lieu la Première guerre mondiale ?", "options": ["De 1914 à 1918", "De 1939 à 1945", "De 1870 à 1871", "De 1804 à 1815"], "answer": "De 1914 à 1918", "detailAnswer": "Conflit extrêmement meurtrier en Europe, qui se termine par l'Armistice du 11 novembre."},
+  {"id": 155, "categorie": "Histoire, géographie et culture", "question": "Sous quel président a été abolie la peine de mort en France ?", "options": ["François Mitterrand", "Charles de Gaulle", "Jacques Chirac", "Georges Pompidou"], "answer": "François Mitterrand", "detailAnswer": "La loi a été votée en 1981, défendue par le ministre de la Justice Robert Badinter."},
+  {"id": 156, "categorie": "Histoire, géographie et culture", "question": "Que célèbre-t-on le 8 mai ?", "options": ["La fin de la Seconde Guerre mondiale en Europe (1945)", "La prise de la Bastille", "L'armistice de 1918", "La fête du Travail"], "answer": "La fin de la Seconde Guerre mondiale en Europe (1945)", "detailAnswer": "Cette date marque la capitulation sans condition de l'Allemagne nazie."},
+  {"id": 157, "categorie": "Histoire, géographie et culture", "question": "Quelle est la première étape de la construction européenne en 1951 ?", "options": ["La CECA (Communauté européenne du charbon et de l'acier)", "La création de l'euro", "Le traité de Lisbonne", "L'entrée du Royaume-Uni"], "answer": "La CECA (Communauté européenne du charbon et de l'acier)", "detailAnswer": "Elle a permis de mutualiser les ressources de guerre entre la France et l'Allemagne pour bâtir la paix."},
+  {"id": 158, "categorie": "Histoire, géographie et culture", "question": "Qui était une figure de la Résistance française pendant la Seconde Guerre mondiale ?", "options": ["Jean Moulin", "Maréchal Pétain", "Robespierre", "Napoléon III"], "answer": "Jean Moulin", "detailAnswer": "Héros national, Jean Moulin a unifié la Résistance intérieure française sous l'autorité de De Gaulle."},
+  {"id": 159, "categorie": "Histoire, géographie et culture", "question": "Le 11 novembre est un jour férié. À quoi correspond cette date ?", "options": ["L'armistice de la Première Guerre mondiale (1918)", "La fin de la Seconde Guerre mondiale", "La fête nationale", "La fête du travail"], "answer": "L'armistice de la Première Guerre mondiale (1918)", "detailAnswer": "C'est l'accord qui a mis fin aux combats de la Grande Guerre en 1918."},
+  {"id": 160, "categorie": "Histoire, géographie et culture", "question": "Depuis quand l'esclavage a-t-il été aboli en France ?", "options": ["1848", "1789", "1905", "1945"], "answer": "1848", "detailAnswer": "Aboli une 1ère fois pendant la Révolution, il est définitivement aboli en 1848."},
+  {"id": 161, "categorie": "Histoire, géographie et culture", "question": "Qui a aboli l'esclavage en France ?", "options": ["Victor Schœlcher", "Napoléon", "Louis XIV", "Charles de Gaulle"], "answer": "Victor Schœlcher", "detailAnswer": "Sous-secrétaire d'État, il a rédigé le décret d'abolition définitive de l'esclavage d'avril 1848."},
+  {"id": 162, "categorie": "Histoire, géographie et culture", "question": "Depuis quelle année l'école publique est-elle gratuite ?", "options": ["1881", "1905", "1945", "1958"], "answer": "1881", "detailAnswer": "La loi du 16 juin 1881 instaure la gratuité absolue de l'enseignement primaire dans les écoles publiques."},
+  {"id": 163, "categorie": "Histoire, géographie et culture", "question": "En 1944, qu'est-ce qui a changé pour les femmes ?", "options": ["Elles ont obtenu le droit de vote", "Elles ont pu travailler sans l'accord du mari", "Elles ont pu ouvrir un compte en banque seules", "L'école est devenue obligatoire pour elles"], "answer": "Elles ont obtenu le droit de vote", "detailAnswer": "L'ordonnance d'Alger leur accorde enfin le droit de voter et d'être élues."},
+  {"id": 164, "categorie": "Histoire, géographie et culture", "question": "Quelle organisation a été créée en 1945 après la Seconde Guerre mondiale ?", "options": ["L'ONU (Organisation des Nations Unies)", "L'Union Européenne", "La SDN (Société des Nations)", "L'OTAN"], "answer": "L'ONU (Organisation des Nations Unies)", "detailAnswer": "Créée pour préserver la paix mondiale et la sécurité internationale."},
+  {"id": 165, "categorie": "Histoire, géographie et culture", "question": "En quelle année l'euro est-il devenu la monnaie officielle de la France ?", "options": ["2002", "1999", "1992", "2010"], "answer": "2002", "detailAnswer": "L'euro fiduciaire (pièces et billets) a remplacé le franc en janvier 2002."},
+  {"id": 166, "categorie": "Histoire, géographie et culture", "question": "Lors de la seconde guerre mondiale, à quelle date la ville de Paris a-t-elle été libérée ?", "options": ["Le 25 août 1944", "Le 18 juin 1940", "Le 6 juin 1944", "Le 8 mai 1945"], "answer": "Le 25 août 1944", "detailAnswer": "Paris a été libéré grâce au soulèvement populaire et à la division Leclerc."},
+  {"id": 167, "categorie": "Histoire, géographie et culture", "question": "Quel était le principal port français impliqué dans la traite négrière au XVIIIe siècle ?", "options": ["Nantes", "Marseille", "Le Havre", "Brest"], "answer": "Nantes", "detailAnswer": "Nantes fut le port français le plus actif dans le commerce triangulaire et l'esclavage."},
+  {"id": 168, "categorie": "Histoire, géographie et culture", "question": "Quel célèbre philosophe des Lumières a dénoncé l'esclavage ?", "options": ["Montesquieu", "René Descartes", "Blaise Pascal", "Jean-Paul Sartre"], "answer": "Montesquieu", "detailAnswer": "Dans 'De l'esprit des lois', Montesquieu rédigea un texte très ironique démontant les arguments esclavagistes."},
+  {"id": 169, "categorie": "Histoire, géographie et culture", "question": "Quelle œuvre a été écrite par Victor Hugo ?", "options": ["Les Misérables", "Le Petit Prince", "L'Étranger", "Madame Bovary"], "answer": "Les Misérables", "detailAnswer": "Chef-d'œuvre de la littérature française décrivant la misère sociale du XIXe siècle."},
+  {"id": 170, "categorie": "Histoire, géographie et culture", "question": "Quel peintre est français ?", "options": ["Claude Monet", "Léonard de Vinci", "Pablo Picasso", "Vincent van Gogh"], "answer": "Claude Monet", "detailAnswer": "Claude Monet est l'un des fondateurs du mouvement impressionniste en France."},
+  {"id": 171, "categorie": "Histoire, géographie et culture", "question": "Quel plat est une spécialité de la cuisine française ?", "options": ["Le bœuf bourguignon", "La paella", "Les spaghettis à la carbonara", "Le couscous"], "answer": "Le bœuf bourguignon", "detailAnswer": "C'est un plat traditionnel mijoté au vin, originaire de la région de Bourgogne."},
+  {"id": 172, "categorie": "Histoire, géographie et culture", "question": "Qui était Marie Curie ?", "options": ["Une physicienne et chimiste qui a étudié la radioactivité", "Une reine de France", "Une actrice de cinéma", "La première femme astronaute"], "answer": "Une physicienne et chimiste qui a étudié la radioactivité", "detailAnswer": "Double prix Nobel, elle est célèbre pour ses découvertes sur le radium et le polonium."},
+  {"id": 173, "categorie": "Histoire, géographie et culture", "question": "Qui a peint \"La liberté guidant le peuple\" ?", "options": ["Eugène Delacroix", "Auguste Renoir", "Paul Cézanne", "Claude Monet"], "answer": "Eugène Delacroix", "detailAnswer": "Tableau romantique de 1830 qui incarne la révolte populaire et la figure allégorique de la liberté."},
+  {"id": 174, "categorie": "Histoire, géographie et culture", "question": "Dans quel grand musée parisien est exposée la Joconde ?", "options": ["Le Musée du Louvre", "Le Musée d'Orsay", "Le Centre Pompidou", "Le Grand Palais"], "answer": "Le Musée du Louvre", "detailAnswer": "Le tableau de Léonard de Vinci attire des millions de visiteurs chaque année au Louvre."},
+  {"id": 175, "categorie": "Histoire, géographie et culture", "question": "Quel château célèbre se trouve près de Paris et symbolise le pouvoir royal de Louis XIV ?", "options": ["Le château de Versailles", "Le château de Chambord", "Le château de Chenonceau", "Le palais des Papes"], "answer": "Le château de Versailles", "detailAnswer": "Versailles est le symbole absolu de la monarchie française à son apogée."},
+  {"id": 176, "categorie": "Vivre dans la société française", "question": "Où faut-il déclarer la naissance d'un enfant ?", "options": ["À la mairie", "À la préfecture", "Au commissariat", "À l'hôpital uniquement"], "answer": "À la mairie", "detailAnswer": "La déclaration de naissance à l'état civil de la mairie du lieu de naissance est obligatoire dans les 5 jours."},
+  {"id": 177, "categorie": "Vivre dans la société française", "question": "Quelle action peut réaliser le locataire d'un logement sans l'autorisation du propriétaire ?", "options": ["Peindre les murs", "Casser un mur porteur", "Sous-louer l'appartement", "Transformer l'appartement en commerce"], "answer": "Peindre les murs", "detailAnswer": "Le locataire a le droit d'aménager librement, mais ne peut pas faire de gros travaux de transformation."},
+  {"id": 178, "categorie": "Vivre dans la société française", "question": "Quel mariage est reconnu légalement ?", "options": ["Le mariage civil à la mairie", "Le mariage religieux seul", "Le concubinage", "Le PACS"], "answer": "Le mariage civil à la mairie", "detailAnswer": "En France laïque, seul le mariage civil (célébré en mairie) a une valeur juridique."},
+  {"id": 179, "categorie": "Vivre dans la société française", "question": "Le stationnement sur une place réservée aux personnes handicapées :", "options": ["Est interdit sauf si on possède la carte de stationnement pour handicapé", "Est autorisé si on ne reste que 5 minutes", "Est autorisé le dimanche", "Est autorisé aux femmes enceintes"], "answer": "Est interdit sauf si on possède la carte de stationnement pour handicapé", "detailAnswer": "Le respect de ces emplacements est strict, le contrevenant risque une amende de 135 euros."},
+  {"id": 180, "categorie": "Vivre dans la société française", "question": "Quel numéro d'urgence permet d'appeler la police ?", "options": ["Le 17", "Le 15", "Le 18", "Le 112"], "answer": "Le 17", "detailAnswer": "Le 17 est le numéro de Police Secours en France (le 112 marche aussi dans toute l'Europe)."},
+  {"id": 181, "categorie": "Vivre dans la société française", "question": "Quel numéro d'urgence permet d'appeler le SAMU ?", "options": ["Le 15", "Le 17", "Le 18", "Le 114"], "answer": "Le 15", "detailAnswer": "Le 15 est dédié aux urgences médicales graves requérant une intervention rapide."},
+  {"id": 182, "categorie": "Vivre dans la société française", "question": "À quoi sert la carte Vitale ?", "options": ["À justifier de ses droits à l'Assurance maladie pour le remboursement des soins", "À payer chez le médecin", "À prouver son identité", "À s'inscrire à l'école"], "answer": "À justifier de ses droits à l'Assurance maladie pour le remboursement des soins", "detailAnswer": "Cette puce permet la transmission électronique des feuilles de soins pour un remboursement rapide."},
+  {"id": 183, "categorie": "Vivre dans la société française", "question": "L'avortement est-il possible en France ?", "options": ["Oui, c'est un droit (l'IVG)", "Non, c'est formellement interdit", "Oui, mais seulement avec l'accord du mari", "Seulement si la vie de la mère est en danger"], "answer": "Oui, c'est un droit (l'IVG)", "detailAnswer": "Depuis 1975, l'Interruption Volontaire de Grossesse est un droit pour toutes les femmes."},
+  {"id": 184, "categorie": "Vivre dans la société française", "question": "Travailler sans être déclaré est :", "options": ["Illégal (c'est du travail dissimulé ou \"au noir\")", "Autorisé pour les étudiants", "Légal si l'employeur est d'accord", "Autorisé pour moins de 10 heures par semaine"], "answer": "Illégal (c'est du travail dissimulé ou \"au noir\")", "detailAnswer": "Le travail dissimulé prive le salarié de droits (chômage, retraite) et est un délit pénal."},
+  {"id": 185, "categorie": "Vivre dans la société française", "question": "Qu'est-ce que le SMIC ?", "options": ["Le Salaire Minimum Interprofessionnel de Croissance", "Le Syndicat Médical Indépendant", "Une aide pour payer le loyer", "Une taxe sur les salaires"], "answer": "Le Salaire Minimum Interprofessionnel de Croissance", "detailAnswer": "C'est le salaire horaire légal minimum en dessous duquel un salarié ne peut pas être payé."},
+  {"id": 186, "categorie": "Vivre dans la société française", "question": "Quelle est la durée légale du temps de travail par semaine ?", "options": ["35 heures", "39 heures", "40 heures", "42 heures"], "answer": "35 heures", "detailAnswer": "Fixée depuis 2000, cette durée sert de référence pour le déclenchement des heures supplémentaires."},
+  {"id": 187, "categorie": "Vivre dans la société française", "question": "Qui a le droit de se syndiquer ?", "options": ["Tous les travailleurs", "Uniquement les fonctionnaires", "Uniquement les ouvriers", "Personne, c'est interdit"], "answer": "Tous les travailleurs", "detailAnswer": "La liberté syndicale est garantie par le préambule de la Constitution de 1946."},
+  {"id": 188, "categorie": "Vivre dans la société française", "question": "Est-il possible de licencier une femme enceinte ou en congé maternité, en raison de sa grossesse ?", "options": ["Non, la loi la protège contre le licenciement", "Oui, si elle ne peut plus faire le même travail", "Oui, si l'entreprise a des difficultés", "Non, sauf si le médecin du travail est d'accord"], "answer": "Non, la loi la protège contre le licenciement", "detailAnswer": "Les femmes enceintes bénéficient d'une protection absolue contre le licenciement lié à leur état."},
+  {"id": 189, "categorie": "Vivre dans la société française", "question": "L'instruction des enfants est obligatoire de :", "options": ["3 à 16 ans", "6 à 16 ans", "3 à 18 ans", "6 à 18 ans"], "answer": "3 à 16 ans", "detailAnswer": "Depuis 2019, l'instruction (à l'école ou exceptionnellement en famille) commence obligatoirement à 3 ans."},
+  {"id": 190, "categorie": "Vivre dans la société française", "question": "Est-ce possible de punir physiquement ses enfants ?", "options": ["Non, les violences éducatives ordinaires sont interdites", "Oui, si c'est pour l'éduquer", "Oui, avec modération", "Uniquement après l'âge de 7 ans"], "answer": "Non, les violences éducatives ordinaires sont interdites", "detailAnswer": "Une loi de 2019 a formellement interdit les punitions corporelles (fessées, gifles) envers les enfants."}
 ]

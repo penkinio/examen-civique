@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import naturalisationBank from './qcm_naturalisation.json';
-import residentBank from './qcm_resident.json';
-import pluriannuelleBank from './qcm_complet_pluriannuelle.json';
+import naturalisationBank from './qcm/naturalisation.json';
+import residentBank from './qcm/resident.json';
+import pluriannuelleBank from './qcm/pluriannuelle.json';
 
 // Configuration des types de QCM
 const QUIZ_CONFIGS = {
@@ -360,7 +360,8 @@ export default function ExamenCivique() {
             </button>
             <button
               onClick={() => setViewMode('review')}
-              className="px-8 py-3 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border-2 border-gray-200 dark:border-gray-700 font-bold rounded-xl hover:bg-gray-50 dark:hover:bg-gray-700 transition-all"
+              disabled={percentage === 100}
+              className="px-8 py-3 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border-2 border-gray-200 dark:border-gray-700 font-bold rounded-xl hover:bg-gray-50 dark:hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
             >
               Voir mes erreurs
             </button>

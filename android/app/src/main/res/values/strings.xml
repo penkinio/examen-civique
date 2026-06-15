@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">testcivique</string>
+    <string name="title_activity_main">testcivique</string>
+    <string name="package_name">com.penkinio.app</string>
+    <string name="custom_url_scheme">com.penkinio.app</string>
+</resources>
